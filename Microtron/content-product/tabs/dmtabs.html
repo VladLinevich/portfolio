@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Демо: Вкладки табы на jQuery</title>
+		<meta name="description" content="Самый лёгкий и быстрый плагин jQuery для вкладок (табов), cоздает динамичные блоки с содержанием" />
+		<meta name="keywords" content="вкладки, плагин jQuery, табы, вкладки-табы, блоки с содержанием" />
+		<meta name="author" content="Dobrovoimaster" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" href="css/tabs-style.css" media="all" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>  
+    html, body {
+    height: 100%;
+    }
+    body {
+    font: 14px/1.5 "Open Sans", sans-serif;
+    color: #555;
+    background: #ededed;
+    margin: 0;
+    }
+    .top-nav {
+    background: #555555;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+    left: 0;
+    opacity: 0.95;
+    padding: 8px;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    margin: 0 auto;
+    }
+    .topnav-wrapper {
+    margin: 0 auto;
+    max-width: 980px;
+    }
+    .top-nav a{
+    color: #b8b8b8;
+    text-decoration: none; 
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+    .top-nav a:hover{
+    color: #ddd;
+    }
+    .topnav-right {
+    float: right;
+    }
+    .content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    }  
+    </style>
+    </head>
+    <body>    
+           <div class="top-nav">
+            <div class="topnav-wrapper">
+                <div class="topnav-right">
+                    <a href="http://dbmast.ru/samyj-lyogkij-plagin-jquery-dlya-sozdaniya-vkladok-tabov" title="Вернуться к изучению деталей">&laquo; &laquo; Изучить Детали</a>
+                </div>
+                <div class="top-logo">
+                    <a href="http://dbmast.ru/">{ -- dbmast.ru -- }</a>
+                </div>
+            </div>
+        </div>
+        <section class="content">
+             <h1 style="text-align:center;">
+             DmTabs.js - Вкладки (табы) на jQuery
+             </h1>
+             <div class="tabs_block">
+                <ul class="tabs">
+                    <li class="active">Вкладка1</li>
+                    <li>Вкладка2</li>
+                    <li>Вкладка3</li>
+                </ul>
+                <div class="box visible">
+                    <p>Перед вами очень простой, легковесный и наверное, самый шустрый из всех, плагин jQuery, для создания "табов", с помощью которого, вы сможете легко организовать на своих проектах, вывод содержания(контента) в виде динамично переключаемых вкладок.</p> 
+                    <p>Предусмотрена возможность использования на странице неограниченного количества блоков вкладок.</p>
+                </div>
+                <div class="box">
+                    <p>Каких бы то ни было отдельных настроек плагин не имеет. Это как раз тот случай, когда проще - лучще.  Внешний вид формируется непосредственно в CSS, немного фантазии и вкладки преобразятся в соответствии вашим предпочтениям :)</p>
+                </div>
+                <div class="box">
+                    <p><img src="http://placephant.com/300" class="pl-left">Картинки в "табах" вы можете отправить, как влево, так и вправо, для этого достаточно добавить тегу <strong>img</strong> соответствующий класс <strong>class="pl-left"</strong> или <strong>class="pl-right"</strong>.</p>
+                    <p>Позиционирование изображений определяется через <strong>float: right</strong> и <strong>float: left</strong> соответственно.</p>
+                </div>
+              </div>
+                <br>        
+              <div class="tabs_block">
+                <ul class="tabs">
+                    <li>Вкладка1</li>
+                    <li class="active">Вкладка2</li>
+                    <li>Вкладка3</li>
+                </ul>
+                <div class="box">
+                    <p>Вложенность вкладок не предусмотрена. Для этих целей стоит поискать более мощный "комбайн". Плагин заточен на лёгкость по всем параметрам.</p> 
+                    <p>Быстрая интеграция, наполение вкладок необходимым содержанием, минимум телодвижений и ещё один инструмент у вас в обойме. </p>
+                </div>
+                <div class="box visible">
+                    <p><img src="http://placephant.com/300" class="pl-right">
+                    Изображениям внутри вкладок, выставил значение ширины в %, тем самым обеспечив возможность пропорционального изменения, при изменении размеров базового контейнера вкладок (табов). Конечно же, никто и ничто не мешает вам использовать фиксированные размеры изображений:)</p>
+                </div>
+                <div class="box">
+                    <p>Содержание здесь.... </p>
+                </div>
+              </div>
+            
+        </section>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/dm-tabs.js"></script>
+    </body>
+</html>

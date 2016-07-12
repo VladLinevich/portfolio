@@ -1,0 +1,54 @@
+@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/Lato/Lato-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/Lato/Lato-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/Lato/Lato-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/Lato/Lato-Heavy.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/Lato/Lato-Semibold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+/*@font-face {
+    font-family: LatoRegular;
+    src:url(../fonts/RobotoSlab/RobotoSlab-Bold.ttf),
+    src:url(../fonts/RobotoSlab/RobotoSlab-Bold.ttf),
+    src:url(../fonts/RobotoSlab/RobotoSlab-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/* font-family: "LatoRegular"; */
+
+/*@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/Lato/LatoRegular.eot");
+    src: url("../fonts/Lato/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Lato/LatoRegular.woff") format("woff"),
+    url("../fonts/Lato/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}*/

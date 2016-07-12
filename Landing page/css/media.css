@@ -1,0 +1,281 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	  .slider{
+    background-position: left;
+  }
+    .about-text {
+      text-align: left;
+      }
+
+    .about-text h3 {
+      margin: 30px 30px 0 30px;
+      letter-spacing: 0px;
+      word-spacing: 0px;
+    }
+
+    .about-text p {
+      margin: 10px 30px 0 30px;
+      letter-spacing: 2px;
+    }
+
+}
+
+@media only screen and (max-width : 1086px) {
+    
+    .about-text h3 {
+      font-size: 22px;
+    }
+
+    .about-text p {
+      line-height: 22px;
+      font-size: 15px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	 .top-line li {
+    margin-left: 20px;
+  }
+  .slider{
+    padding-top: 450px;
+    text-align: center;
+  }
+
+  .inform-box {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .inform-box {
+    text-align: center;
+  }
+
+  .inform-box img{
+     width: 120px;
+    float: none;
+  }
+
+  .inform-box div p {
+    line-height: 17px;
+  }
+
+  .testimonals {
+    margin-top: 50px;
+
+  }
+
+  .testimonals-text {
+    padding: 35px 50px;
+    text-align: center;
+  }
+
+  .slider-bottom-controls {
+    left: 46%;
+  }  
+  
+ .about-img,
+ .about-text-main {
+    width: 100%;
+    display: block;
+ }
+
+ .about-text {
+    text-align: center;
+    padding: 0 10px;
+ }
+
+  .about-text h3 {
+      font-size: 26px;
+      word-spacing: 4px;
+      letter-spacing: 1px;
+    }
+
+    .about-text p {
+      margin-top: 20px;
+      line-height: 22px;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.top-line, .social-icons {
+		text-align: center;
+	}
+
+	.top-line li {
+   margin: 10px 0  0 20px;
+  }		
+
+  .nav-menu, .social-icons{
+  	padding: 0px;
+  }
+
+  .slider {
+    padding-top: 445px;
+  }
+
+}  
+/* Small Devices, Tablets */
+@media only screen and (max-width : 628px) {
+  .slider h1 {
+    font-size: 26px;
+  }
+
+    .slider-bottom-controls {
+    position: absolute;
+    top: 98%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+  .slider {
+    padding-top: 450px;
+  }
+
+  .slider h1 {
+    font-size: 20px;
+  }
+
+  .testimonals {
+    margin-top: 10px;
+  }
+
+  .testimonals-text {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .testimonals-text p {
+    margin: 30px 0 20px 0;  
+  }
+
+  .slider-bottom-controls {
+    left: 42%;
+  }
+
+    .about-text h3 {
+      font-size: 22px;
+      word-spacing: 2px;
+      letter-spacing: 0px;
+      line-height: 30px;
+    }
+
+    .about-text p {
+      margin-top: 20px;
+      line-height: 22px;
+      font-size: 14px;
+      word-spacing: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .call-text {
+      margin-top:  30px;
+      letter-spacing: 0px;
+    }
+    .call-text p {
+      margin-top:  30px;
+      letter-spacing: 1px;
+    }
+
+    .sing-up-button {
+      margin-top: 50px;
+    }  
+
+    footer {
+      padding: 20px 10px;
+    }  
+
+    .slider h1 {
+    font-size: 17px;
+    padding-right: 0px;
+  }
+
+    .arrow-lbl {
+    display: inline-block;
+  }
+
+    .slider {
+    padding-top: 450px;
+  }
+
+  .arrow {
+    display: inline-block;
+  }
+
+   .top-line ul {
+    height: 100%;
+    overflow: hidden;
+    display: none;
+  }
+
+  .top-line li {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 0;
+    margin-left: 0;
+    margin-top: 0;
+    border-top: 1px solid #222222;
+  }
+
+    .slider-bottom-controls {
+    left: 38%;
+  }
+
+}
+
+@media only screen and (max-width : 382px) {
+  
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  
+
+
+
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

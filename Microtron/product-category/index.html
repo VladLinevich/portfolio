@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Content</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="libs/ui-slider/ui-slider.css">
+	<link rel="stylesheet" type="text/css" href="css/product-category.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+	
+	<section>
+		<div class="container">
+			<row>
+				<div class="col-md-3 sidebar-pos">
+				<h3>product category</h3>
+					<ul class="product-categories">
+							<li>
+								<a href="#">cellphones</a>
+								<span class="count">(24)</span>
+								<span id="chid-plus" class="child-indicator"></span>
+								<ul class="children">
+									<li><a href="#">Accessories</a><span class="count">(11)</span></li>
+									<li><a href="#">Phablets</a><span class="count">(3)</span>
+									</li>
+									<li><a href="#">Smartphones</a><span class="count">(13)</span></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">COMPUTERS & TABLETS</a>
+								<span class="count">(12)</span>
+								<span class="child-indicator"></span>
+								<ul class="children">
+									<li><a href="#">Desktops</a><span class="count">(2)</span></li>
+									<li><a href="#">Laptops</a><span class="count">(2)</span></li>
+									<li><a href="#">Peripherals</a><span class="count">(7)</span><span class="child-indicator child-indicator-3"></span>
+										<ul class="children children-3">
+											<li><a href="#">Graphic Tablets</a><span class="count">(4)</span></li>
+											<li><a href="#">Mise & Keyboards</a><span class="count">(3)</span></span>	
+											</li>
+										</ul></li>
+									<li><a href="#">Tablets</a><span class="count">(2)</span></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">ACCESSORIES</a>
+								<span class="count">(11)</span>
+								<span class="child-indicator"></span>
+								<ul class="children">
+									<li><a href="#">Headphones</a><span class="count">(9)</span></li>
+									<li><a href="#">Photo & Video</a><span class="count">(2)</span></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#">SMARTWATCH</a>
+								<span class="count">(5)</span>
+							</li>
+						</ul>	
+
+						<!-- ПОЛЗУНОК -->
+
+						<h3>FILTER BY PRICE</h3>
+						<div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="slider-range"></div>
+						<div class="input-for-slider">
+						  <label for="amount">Price range:</label>
+						  <input type="text" id="amount" readonly>
+						  <button type="submit">filter</button>
+						</div>
+						<!-- ======== -->
+
+						<!-- ВЫБОР ЦВЕТА -->
+						<h3>filter by color</h3>
+							<select class="left-select"> 
+								<option value="Any colors">Any colors</option>
+								<option value="Black">Black</option>
+								<option value="Blue">Blue</option>
+								<option value="Gold">Gold</option>
+								<option value="Green">Green</option>
+								<option value="Orange">Orange</option>
+								<option value="Pink">Pink</option>
+								<option value="Purpure">Purpure</option>
+								<option value="Red">Red</option>
+								<option value="Silver">Silver</option>
+								<option value="Whire">Whire</option>
+								<option value="Yellow">Yellow</option>
+							</select>
+						<!-- ======= -->
+					<h3>filter by os</h3>
+					<ul class="filter-os">
+						<li><a href="#">Android</a><span class="count">(1)</span></li>
+						<li><a href="#">iOS</a><span class="count">(2)</span></li>
+						<li><a href="#">Windows</a><span class="count">(3)</span></li>
+					</ul>
+					<div class="section-2">
+						<h3>TOP RATED PRODUCTS</h3>
+              <ul>
+                <li>
+                  <a href="#" id="pict1"><img src="img/360moto-01-120x120@2x.jpg" alt="pict"> <span>
+                    <span class="title-top-rate-product">Motorolla Moto 360</span>
+                    <br> <span class="price-footer">$299.99</span> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="pict1"><img src="img/iphone6-120x120@2x.jpg" alt="pict"> <span><span class="title-top-rate-product">Apple iPhone 6</span>
+                    <br> <span class="section-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </span>
+                    <br> <span class="price-footer price-footer-2">$850.00</span>&#160;&#160; <span class="sale-section-2">$900.00</span> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="pict1"><img src="img/denon-head-01-120x120@2x.jpg" alt="pict"> <span><span class="title-top-rate-product">Denon Music Maniac Artisan</span>
+                    <br> <span class="section-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </span>
+                    <br> <span class="price-footer price-footer-2">$1.199.00</span>&#160;&#160; <span class="sale-section-2">$1.300.00</span> </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- БЛОК СКИДКИ -->
+					<div class="section-2 section-sale">
+						<h3>PRODUCTS ON SALE</h3>
+              <ul>
+                <li>
+                  <a href="#" id="pict1"><img src="img/hero-session-01-150x150@2x.jpg" alt="pict"> <span>
+                    <span class="title-top-rate-product">HERO4 Session</span>
+                    <br> <span class="price-footer">$299.99</span>&#160;&#160<span class="sale-section-2">$900.00</span> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="pict1"><img src="img/sony-watch-01-80x80@2x.jpg" alt="pict"> <span><span class="title-top-rate-product">Sony SmartWatch 3</span>
+                    <br> <span class="price-footer price-footer-2">$850.00</span>&#160;&#160; <span class="sale-section-2">$900.00</span> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="pict1"><img src="img/imac4-150x150@2x.jpg" alt="pict"> <span><span class="title-top-rate-product">Custom Mac Grouped</span>
+                    <br> <span class="price-footer price-footer-2">$1.199.00</span>&#160;&#160; <span class="sale-section-2">$1.300.00</span> </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+           </div>
+           <div class="col-md-9 content-pos">
+           	<div class="top-dar-shop">
+           		<p class="result-count">SHOWING ALL 13 PRODUCTS</p>
+							<ul class="shop-ordering">
+								<li>
+									<div class="shop-layout-opts">
+										<a href="#"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+									</div>
+								</li>
+								<li>
+									<form method="get">
+										<select class="left-select select-count">
+											<option>16</option>
+											<option>28</option>
+											<option>40</option>
+										</select>
+									</form>
+								</li>
+								<li>
+									<form method="get">
+										<select class="left-select select-count select-sort-by">
+											<option>Defalt Scroling</option>
+											<option>Sort by popularity</option>
+											<option>Sort by average rating</option>
+											<option>Sort by newness</option>
+											<option>Sort by price: low to high</option>
+											<option>Sort by price: high to low</option>
+										</select>
+									</form>
+								</li>
+							</ul>
+           	</div>
+
+           	<ul class="single-box">
+							<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+		  					<li>	<!-- ОТДЕЛЬНВЙ БОКС -->
+		  				<div class="col-lg-3 col-md-3  col-sm-6  .col-xs-6 col-md-3-restal clearfix">
+		  					<div class="main-content-box ">
+		  						<div class="content-box">
+		  							<div class="product-pict">
+		  								<a href="#"><img src="img/360moto-01-350x380.jpg" alt="qwe" >
+		  									<img src="img/iphone6-350x380.jpg" alt="qwe"></a>
+		  								</div>
+		  								<div class="mait-content-product-text">
+		  									<div class="product-pict-view">
+		  										<i class="fa fa-eye" aria-hidden="true"></i>
+		  									</div>
+		  									<div class="prudct-section"><a href="#">smartwatch</a></div>
+		  									<a href="#"><h4 class="prudct-title">Motorola Moto 360</h4></a>
+		  									<div class="product-price-hidden">
+		  										<hr>
+		  										<div class="prudct-price">$299.99</div>
+		  										<input type="button" class="content-box-button" value="add to cart">
+		  									</div>
+		  									<div class="product-description-text">
+		  										<p class="product-description">The new Moto 360 combines edge-to-edge glass with an exceptionally thin, polished bezel, giving you the largest viewing area. Whether…</p>
+		  										<hr>
+		  										<span class="product-add"><i class="fa fa-heart-o" aria-hidden="true"></i>ADD TO WISHLIST</span>
+		  										<span class="product-add"><i class="fa fa-retweet" aria-hidden="true"></i>COMPARE</span>
+		  									</div>
+		  								</div>
+		  							</div>
+		  						</div>
+		  					</div>
+		  					<!-- ОТДЕЛЬНВЙ БОКС --></li>
+           </div>
+         </div>
+					
+				
+			</row>
+		</div>
+	</section>
+	
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="libs/ui-slider/jquery.ui-slider.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

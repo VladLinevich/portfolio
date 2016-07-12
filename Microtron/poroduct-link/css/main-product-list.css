@@ -1,0 +1,520 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+
+a:focus,
+a:visited,
+a:hover,
+a{
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+
+
+ul {
+	text-decoration: none;
+	padding: 0;
+}
+
+li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: Lato-Light;
+	font-size: 16px;
+		font-weight: bold;
+}
+
+/*Content*/
+.container{
+	margin-top: 20px;
+	padding: 0;
+}
+
+
+/*Product-info*/
+
+.single-product-info ul li {
+	display: inline-block;
+}
+
+.quantity button,
+.quantity .quantity-control {
+	display: inline-block;
+}
+
+/*-----------------ССЫЛКИ СТРАНИЦ------------------------*/
+
+.list-link a {
+	font: 10px/16px Lato-Medium;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgba(0,0,0,0.4);
+}
+
+.list-link a:hover {
+	color: rgba(0,0,0,0.8);
+}
+
+/*--------------------------------------------------------*/
+
+h1 {
+	font: 34px/40px Lato-Bold;
+}
+
+.price {
+	display: inline-block;
+	font: bold 30px/26px Lato-Light;
+	margin: 10px 0;
+	color: #000;
+}
+
+
+.product-description-2 {
+	font-family: Lato-Bold;
+	margin: 20px 0;
+}
+.in-stock {
+	color: #77a464;
+	font-size: 14px;
+
+
+}
+
+/*----------------ФОРМА ИНФОРМАЦИИ-------------------*/
+
+.cart{
+	margin-top: 30px;
+	padding: 30px;
+	border: 3px solid rgba(0,0,0,0.03);
+	border-radius: 8px;
+}
+
+.input-text {
+	border-radius: 5px;
+	border-width: 0;
+  background-color: rgba(0,0,0,0.03);
+  font-size: 20px;
+  text-transform: uppercase;
+  width: 60px !important;
+  height: 45px !important;
+  line-height: 45px !important;
+  padding: 0px 0px 0px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.input-text:focus {
+	outline: none;
+}
+
+.quantity button,
+.comment-form button {
+	background-color: #6990CB;
+	color: #fff;
+	border: 0;
+	text-align: center;
+	text-transform: uppercase;
+	box-shadow: none;
+	border-radius: 5px;
+	height: 45px;
+  line-height: 45px;
+  padding: 0 30px;
+  font-size: 11px;
+  margin-left: 10px;
+  transition: 0.2s;
+}
+
+.quantity button:hover,
+.comment-form button:hover {
+	background-color: #79A6E9;
+}
+
+/*---------------------------------------------------*/
+
+/*----------------ЛАЙКИ ПОД ФОРМОЙ-------------------*/
+.wishlist {
+	margin: 30px 0 10px 0;
+}
+
+.wishlist, 
+.compare {
+	text-transform: uppercase;
+	font-family: Lato-Semibold;
+	font-size: 12px;
+}
+
+.fa-heart-o, 
+.fa-refresh,
+.fa-heart {
+	padding-right: 9px;
+	font-size: 12px;
+	color: rgba(0,0,0,0.4);
+
+}
+
+.wishlist a:hover, 
+.compare a:hover {
+	opacity: .7;
+	transition: 0.2s;
+}
+
+.wishlist-text-analog { 
+	text-transform: none;
+	display: none;
+}
+
+.wishlist-text-analog a {
+	margin-left: 7px;
+	text-transform: uppercase;
+	font: 14px Lato-Bold;
+}
+
+.compare-analog {
+	font: 14px Lato-Bold;
+	display: none;	
+}
+
+.compare-analog .fa-check {
+	padding-left: 5px;
+}
+/*---------------------------------------------------*/
+
+
+
+
+/*-----------------------ОСНОВНОЕ ОПИСАНИЕ-----------*/
+
+.summary-description {
+	margin-top: 40px;
+}
+
+.product-meta {
+	padding: 10px 30px;
+  background-color: rgba(0,0,0,0.03);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.product-meta * {
+	display: inline-block;
+	font: 14px Lato-Medium;
+
+}
+
+.product-meta > span {
+	padding-right: 30px;
+	color: rgba(0,0,0,0.4);	
+	margin-top: 10px;
+}
+
+.product-meta a:hover {
+	color: rgba(0,0,0,0.7);
+	transition: .2s;
+}
+
+/*------------------------ТАБЫ-----------------------*/
+
+.tabs-naviganion {
+	margin: 40px 0 60px 0;
+	font: 24px Lato-Regular;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.tabs-naviganion li {
+	display: inline-block;
+	margin-right: 30px;
+	padding-bottom: 10px;
+}
+
+.tabs-naviganion li a {
+		color: rgba(0,0,0,0.4);
+		transition: color .3s;
+		padding-bottom: 9px;
+}
+
+.tabs-naviganion li a:focus {
+		color: #000;
+}
+
+.selected{
+	color: #000;
+	border-bottom: 3px solid #000;
+}
+
+.tab-content p {
+	margin: 20px 0;
+}
+
+.tab-content h3 {
+	font: 24px/34px Lato-Bold;
+	margin: 20px 0 16px 0;
+}
+
+
+/*---------------------------------------------------*/
+
+/*---------------ОБЩАЯ ИНФОРМАЦИЯ 2 ТАБ--------------*/
+
+.a-i-table th{
+    width: 150px;
+    font-weight: 700;
+    padding: 12px;
+    text-transform: uppercase;
+    font: 14px Lato-Bold;
+}
+
+.a-i-table p {
+	margin: 0;
+}
+
+
+
+/*---------------------------------------------------*/
+
+/*---------------ФОРМА 3 ТАБ-------------------------*/
+.Revieves-2 h3 {
+	font: 35px/39px Lato-Light;
+	font-weight: bold;
+}
+
+.comment-form p {
+	margin: 0;
+}
+
+.stars a {
+	margin: -2px;
+	color: #DFDFDF;
+}
+
+.stars a:hover,
+.stars a:focus {
+	color:	#79a6e9;
+}
+
+#rating {
+	display: none;
+}
+
+.comment-form p {
+	margin: 20px 0 10px 0;
+}
+
+.comment-form label {
+	font: 14px/18px Lato-Bold;
+	text-transform: uppercase;
+	display: block;
+}
+
+.comment-form textarea {
+	height: 75px;
+	padding: 15px;
+	font-size: 16px;
+	resize: none;
+}
+
+.comment-form input {
+	width: 90%;
+	padding: 15px 15px;
+	font-size: 16px;
+
+}
+
+.comment-form input,
+.comment-form textarea {
+	border-radius: 5px;
+	border: none;
+	background-color: #F9F9F9;
+}
+
+.comment-form button {
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	margin: 10px 0;
+	margin-left: 63%;
+}
+
+.comment-form .stars {
+	margin: 0;
+}
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+/*-----------------САЙДБАР--------------------*/
+
+.shop-sidebar img{
+	width: 39px;
+		vertical-align: top;
+		margin-right: 10px;
+
+}
+
+.shoping-box-description {
+	width: 70%;
+	display: inline-block;
+}
+
+.shoping-box-description span {
+	font: 16px/20px Lato-Semibold;
+	text-transform: uppercase;
+}
+
+.shoping-box-description p {
+	font-size: 13px;
+	line-height: 16px;
+	color: rgba(0,0,0,0.55);
+}
+
+#rotator {
+	width: 100%;
+	height: 512px;
+  background-color: rgba(0,0,0,0.4);
+  margin: 20px 0 45px 0;
+  position: relative;
+  
+}
+
+#rotator li {
+	float: left;
+	position: absolute;
+	
+}
+#rotator  a img{
+	width: 100%;
+}
+
+.shop-sidebar h3 {
+	font: 16px/25px Lato-Bold;
+	margin-bottom: 20px;
+}
+
+.shop-sidebar span {
+	display: block;
+}
+
+.shop-sidebar a {
+	font: 16px/20px Lato-Bold;
+	transition: .2s;
+}
+
+.shop-sidebar a:hover {
+	color: rgba(0,0,0,0.8);
+}
+
+.shop-sidebar a img {
+	width: 70px;
+	float: left;
+	clear: left;
+	margin: 0 20px 20px 0;
+	vertical-align: top;
+}
+
+.shop-sidebar .star-rating {
+	font-size: 11px;
+	word-spacing: -3px;
+	color: #6990CB;
+}
+
+.shop-sidebar .start-reviewer {
+	font-size: 15px;
+	line-height: 24px;
+	color: rgba(0,0,0,0.4);
+}
+
+.product-list-widget li {
+	margin-bottom: 30px;
+}
+/*---------------------------------------------------*/
+
+
+/**
+ * EasyZoom core styles
+ */
+.easyzoom {
+	position: relative;
+
+	/* 'Shrink-wrap' the element */
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.easyzoom img {
+	vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+	cursor: progress;
+}
+
+.easyzoom.is-ready img {
+	cursor: crosshair;
+}
+
+.easyzoom.is-error  img {
+	cursor: not-allowed;
+}
+
+.easyzoom-notice {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 150;
+	width: 10em;
+	margin: -1em 0 0 -5em;
+	line-height: 2em;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+	position:absolute;
+	z-index: 100;
+	overflow: hidden;
+	background: #FFF;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.easyzoom--adjacent .easyzoom-flyout {
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	margin-left: 20px;
+}
+
+.single-product img {
+	width: 100%;
+	max-width: 450px;
+}
+
+#gallery_01 a img{
+	width: 80px;
+	margin: 10px 10px 0 0;
+}
+
+#gallery_01 a {
+	opacity: 1;
+}
+
+#gallery_01 .active {
+	opacity: 1;
+}
