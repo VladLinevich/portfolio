@@ -1,0 +1,28 @@
+.content-box a{
+	color: #5E2E23;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.content-box a:hover{
+	color: #908F8F;
+}
+
+.content-box span {
+	font-weight: bold;
+	margin: 20px 0px;
+	display: inline-block;
+}
+.content-box ul {
+	padding-left: 0;
+}
+
+.content-box li{
+	list-style: none;
+	margin: 10px;
+}
+
+.content-box li img {
+	margin-right: 5px;
+}

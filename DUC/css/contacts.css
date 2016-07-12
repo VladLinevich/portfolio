@@ -1,0 +1,11 @@
+.content-box {
+	padding-top: 10px;
+}
+
+.content-box h2{
+		text-align: left;
+		padding-bottom: 0;
+}
+.content-box span {
+	font-weight: bold;
+}

@@ -1,0 +1,165 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .menu{
+    text-align: center;
+  }
+  
+  .menu a li{
+    padding: 5px 20px;
+  }
+
+  .adress li{
+  font-size: 10px;
+  }
+
+
+
+}
+@media only screen and (max-width : 1086px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .adress {
+    text-align: center;
+  }
+
+  .adress h4{
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .inform, .inform2, .inform3 {
+  border-right: none;
+  }
+
+   .adress li{
+  font-size: 16px;
+  margin-bottom: 0px;
+  }
+  
+  .inform li {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 20px;
+  } 
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  .top-line {
+    text-align: center;
+  }
+  .tel, .feedback {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-line {
+  padding-top: 6%;
+  }
+
+  .menu:before, .menu:after {
+    display: none;
+  }
+}  
+/* Small Devices, Tablets */
+@media only screen and (max-width : 628px) {
+  
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	
+  .logo-line {
+  padding-top: 10%;
+  }
+
+  .menu{
+    text-align: center;
+  }
+  .menu ul {
+    padding-left: 0;
+  }
+
+  .menu a li{
+    padding: 5px 0;
+    display: block;
+  }
+
+  .content-box {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width : 382px) {
+  
+  .feedback a {
+    padding: 10px 18%;
+  }
+  
+  .adress{
+    padding-top: 0;
+
+  }
+
+  .adress h4{
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .adress li{
+  font-size: 12px;
+  }
+
+  .inform li {
+    display: block;
+    font-size: 15px;
+    margin: 8px 0;
+  } 
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+    .logo-line {
+  padding-top: 14%;
+  }
+ 
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

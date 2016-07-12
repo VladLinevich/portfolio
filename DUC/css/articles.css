@@ -1,0 +1,35 @@
+.content-box {
+	text-align: justify;
+}
+
+.content-box h3 {
+	text-align: center;
+}
+
+.content-box h2 {
+	text-align: left;
+}
+
+.content-box hr {
+	height: 2px;
+	background-color: #555;
+	margin: 5px;
+}
+
+.icon-articles,
+.icon-articles a {
+	color: #79614D;
+}
+
+.icon-articles i {
+	margin-left: 5px;
+}
+
+.icon-articles a:hover {
+	color: #190900;
+}
+
+.content-box img {
+	float: left;
+	padding: 10px 10px 10px 0;
+}
