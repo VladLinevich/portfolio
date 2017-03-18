@@ -1,0 +1,105 @@
+//tab top
+.tab
+	margin-top: 10px
+
+.nav-tabs.nav
+	li 
+		&:first-of-type
+			a
+				border-radius: 5px 0 0 5px
+		&:last-of-type
+			a
+				border-radius: 0 5px 5px 0
+		a
+			font-family: $zurihcNormal
+			color: #444137
+			font-size: $bfsz + 8
+			padding-top: 3px
+			padding-bottom: 3px
+			box-shadow: inset 0px -1px 0px 1px #fff
+			border-radius: 0
+			border: 1px solid #cfcdc5
+			background: linear-gradient(to bottom, #ffffff 0%,#f4f3f1 100%,#7db9e8 100%)	
+			&:hover
+				background: linear-gradient(to top, #ffffff 0%,#f4f3f1 100%,#7db9e8 100%)
+
+			span.arrow-icon
+				font-size: $bfsz - 6
+				margin-right: 5px
+				vertical-align: middle
+				top: 0
+				margin-top: -4px
+				color: $green
+		
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 0
+				height: 0
+				border-left: 5px solid transparent
+				border-right: 5px solid transparent
+				border-top: 10px solid #0c932f
+				top: 100%
+				left: 49%
+				display: none
+
+		&.active
+			a
+				@extend %gradient-green 
+				color: #fff !important
+				text-shadow: 0px -1px 2px #005c13
+				border-color: #0c932f
+				box-shadow: inset 0px 2px 2px 1px #81de41
+				&:hover, &:active, &:focus
+					border-color: #0c932f
+
+				span.arrow-icon
+					display: none
+
+				&:after
+					display: block
+
+.mobile-icon
+	display: none				
+
+//tab content
+.tab-content
+	margin-top: 15px
+
+.tab-item
+	height: 200px
+	padding-top: 10px
+	padding-bottom: 10px
+	height: 260px
+	max-height: 260px
+
+	a
+		@extend %hovered
+
+	
+	img
+		width: 100%
+		border: 5px solid #e9e6df
+		border-radius: 7px
+		max-height: 105px
+		object-fit: cover
+
+	h4
+		margin-bottom: 5px
+		@extend %text-hidden
+		color: #3a3731
+		font-weight: 600
+		a:hover
+			text-decoration: underline
+
+	p
+		max-height: 85px
+		@extend %text-hidden
+		font-size: $bfsz - 1
+		color: #3a3731
+
+
+		
+
+		

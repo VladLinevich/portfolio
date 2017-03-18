@@ -1,0 +1,76 @@
+.navbar
+	border: 1px solid #0c932f
+	border-radius: 5px
+	margin-bottom: 5px
+	@extend %gradient-green
+
+.navbar-nav > li
+	text-transform: uppercase
+	font-family: $zurichBold
+	@extend %text-shadow-dark
+	text-align: center
+	a
+		color: #fff
+		@extend %hovered
+		&:hover, &:focus, &:active
+			background-color: rgba(8, 8, 8, 0.11)
+
+//mobile menu
+.mobile-mnu
+	display: none 
+	position: absolute
+	top: 0
+	left: -110%
+	width: 75%
+	max-width: 300px
+	background-image: url("../img/bg.png")
+	padding: 10px 0
+	max-height: 400px
+	overflow-y: scroll
+	z-index: 9999
+	box-shadow: 2px 2px 7px 0px #000
+	transition: 1s
+	&.active
+		left: 0
+
+
+	ul li
+		text-transform: uppercase
+		margin: 5px 0
+		border-bottom: 1px solid $lightBlack
+		padding: 5px 10px
+		font-size: $bfsz - 2
+
+	.close-btn
+		border: 1px solid $lightBlack
+		width: 28px
+		text-align: center
+		line-height: 25px
+		border-radius: 50%
+		position: absolute
+		right: 6px
+		top: 6px
+		color: #fff
+		background-color: $lightBlack
+
+.cover-body
+	width: 100%
+	height: 100%
+	position: fixed
+	background-color: rgba(51, 51, 51, 0.5)
+	top: 0
+	left: 0
+	z-index: 999
+	display: none
+
+.navbar-toggle
+	display: none
+	background-color: $lightBlack
+	position: absolute
+	top: 0
+	margin: 3px
+	z-index: 9998
+	padding: 7px 7px
+	span
+		background-color: #fff
+

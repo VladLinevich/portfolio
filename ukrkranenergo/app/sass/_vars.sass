@@ -1,0 +1,59 @@
+//colors
+$fontColor: #333333
+$accentColor: #ff9f06
+$blueColor: #24aaff
+$darkBlueColor: #12375c
+
+$greyColor: #82888a
+$lightGreyColor: #e2e2e2
+
+$linkHover: #f8cb4e
+
+
+$mapCol: rgb(36, 170, 255)
+//fonts
+$bfsz: 14px
+
+//classes
+
+//--> another
+%transition
+	transition: .2s
+
+//--> for header
+%navbar-li
+	border-color: #f3f5f6
+	background-color: #f6f9f9
+
+%orange-circle
+	width: 55px
+	line-height: 55px
+	text-align: center
+	border-radius: 50%
+	border: none
+	font-size: 20px
+	color: #fff
+	cursor: pointer
+	background-color: $accentColor
+
+
+
+//mixins
+@mixin hover($color, $hoverColor)
+	color: $color
+	&:hover
+		color: $hoverColor
+	&:active
+		color: $color
+
+@mixin hoverBg($color, $hoverColor)
+	background-color: $color
+	&:hover
+		background-color: $hoverColor
+	&:active
+		background-color: $color
+		outline: none
+
+@mixin media($size) 
+  @media (max-width: #{$size}px) 
+    @content

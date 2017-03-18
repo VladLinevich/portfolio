@@ -1,0 +1,113 @@
+.main-content
+	background-color: #fff
+	border: 1px solid #e1dbce
+	border-radius: 5px 0 0 5px
+	padding: 20px 15px
+
+//slider
+
+$heightSlider: 270px
+
+.slider
+	width: 100%
+	height: $heightSlider
+	border-radius: 5px
+	overflow: hidden
+	z-index: 2
+	img
+		object-fit: cover
+		height: $heightSlider
+		width: 100%
+		object-position: 100% 20%
+
+	.owl-pagination
+		position: absolute
+		top: 80%
+		right: calc(0% + 150px)
+
+		.owl-page
+			display: inline-block
+
+			span
+				color: #cbcbcb
+				width: 25px
+				line-height: 25px
+				display: inline-block
+				background-color: #6b685e
+				text-align: center
+				border-radius: 50%
+				margin: 0 5px
+				box-shadow: inset 1px -1px 2px 0px #c0baa6
+
+			&.active > span
+				@extend %gradient-green
+				color: #fff
+				width: 27px
+				line-height: 27px
+
+
+.item-inf
+	height: 100%
+	max-height: $heightSlider
+	width: 235px 
+	background-color: #000
+	position: absolute
+	right: 0
+	top: 0
+	padding: 20px 15px
+	background-color: rgba(0, 0, 0, 0.6)
+
+	h3
+		margin: 0
+		color: #fff
+		font-family: $zurihcNormal
+		font-size: $bfsz + 13
+		max-height: 70px
+		@extend %text-hidden
+		white-space: nowrap
+		span
+			font-size: $bfsz * 2 
+			color: $green
+
+	.desc
+		color: rgba(255, 255, 255, 0.8)
+		font-size: $bfsz - 3
+		letter-spacing: 0.3px
+		font-weight: 100
+		margin-top: 10px
+		@extend %text-hidden
+		max-height: 110px
+		a
+			@extend %hovered
+			@include hover ($green, $greenHover)
+			text-decoration: underline
+
+//news with photograph
+.news-block
+	position: relative
+	.news-desc
+		width: 75%
+		
+		h2	
+			text-transform: uppercase
+			font-family: $zurihcNormal
+			font-size: $bfsz*2 + 3	
+
+		p
+			font-size: $bfsz - 2
+
+			a
+				text-decoration: underline
+				@extend %hovered
+				@include hover($green, $greenHover)
+	img
+		position: absolute
+		bottom: -10px
+		right: 0
+		z-index: 10
+
+//tabs include
+@import 'tabs'
+		
+
+		

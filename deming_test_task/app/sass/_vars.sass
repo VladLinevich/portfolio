@@ -1,0 +1,55 @@
+//colors
+$green: #28b028
+$greenHover: #057a0d
+
+$black: #3f3b30
+$darkBlack: #373737
+$lightBlack: #585755
+
+$brown: #64522a
+
+$grey: #757268
+
+//font
+$bfsz: 16px
+
+$arial: 'Arial'
+$klavika: 'Klavika'
+$miriadPro: 'MYRIADPROREGULAR'
+$zurichBold: 'ZurichB'
+$zurihcNormal: 'ZurichN'
+
+//classes
+%text-shadow
+	text-shadow: 1px 1px 0px #fff
+
+%text-shadow-dark
+	text-shadow: 0px -2px 2px #005c13
+
+%hovered
+	transition: .2s
+
+%gradient-green
+	background: linear-gradient(to bottom, rgba(101,193,62,1) 0%, rgba(15,148,26,1) 100%) !important
+	box-shadow: inset 1px 1px 1px 0px #81de41
+
+%gradient-brown
+	background: linear-gradient(to bottom, rgba(153,147,135,1) 0%, rgba(99,85,67,1) 100%)
+	border: 1px solid $brown
+
+%text-hidden
+	overflow: hidden
+	text-overflow: ellipsis
+
+
+//mixins
+@mixin hover($color, $hoverColor)
+	color: $color
+	&:hover
+		color: $hoverColor
+
+@mixin media($size) 
+  @media (max-width: #{$size}px) 
+    @content
+	
+

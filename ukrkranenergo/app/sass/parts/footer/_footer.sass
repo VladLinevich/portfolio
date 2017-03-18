@@ -1,0 +1,149 @@
+footer
+	background-color: $darkBlueColor
+	color: #fff
+
+// ---> Foter head
+.footer-head
+	padding-top: 50px
+	padding-bottom: 35px	
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+
+.footer-head-logo img
+	width: 250px
+
+.footer-head-adress
+	.item-adress
+		display: inline-block
+		text-align: center
+		&:nth-of-type(1) .icon
+				background-image: url(../img/icons/footer-1.png)
+		&:nth-of-type(2) .icon
+			background-image: url(../img/icons/footer-2.png)
+		&:nth-of-type(3) .icon
+			background-image: url(../img/icons/footer-3.png)
+
+		.icon
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			background-color: #103254
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			background-repeat: no-repeat
+			background-position: center
+			
+
+
+			
+
+		.text
+			display: inline-block
+			vertical-align: middle
+			font-weight: 200
+			text-align: left
+
+			strong
+				font-weight: normal
+		
+// ---> Foter content
+
+.footer-content
+	padding-top: 40px
+	padding-bottom: 40px
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06)
+	
+
+	&-menu
+		h5
+			text-transform: uppercase
+			font-size: $bfsz + 2
+			font-weight: 300
+			margin-bottom: 25px
+			text-transform: initial
+			a
+				@extend %transition
+				text-decoration: none
+				@include hover(#fff, $linkHover)
+
+		ul
+			padding: 0
+			list-style-type: none
+			li 
+				position: relative
+				padding-left: 15px
+				&:before
+					background-color: #103254
+					content: ""
+					width: 5px
+					height: 5px
+					-webkit-border-radius: 50%
+					border-radius: 50%
+					display: inline-block
+					position: absolute
+					top: 8px
+					left: 0
+					@extend %transition
+				&:hover::before
+					background-color: $linkHover
+				a
+					text-decoration: none
+					font-size: $bfsz - 1
+					@include hover(#bdc9d3, $linkHover)
+					@extend %transition
+
+#footer-map
+	width: 100%
+	height: 220px
+	opacity: 0.7
+	cursor: pointer
+
+.footer-bottom
+	padding-top: 30px
+	padding-bottom: 30px
+	color: #d6e0e8
+
+	a
+		@include hover(#d6e0e8, $linkHover)
+		@extend %transition
+		text-decoration: none
+		text-transform: uppercase
+
+	.links a
+		margin: 0 25px
+
+
+	.name-of
+		font-size: $bfsz - 1
+
+		a
+			vertical-align: text-bottom
+
+.button-up-container
+	width: 120px
+	height: 120px
+	position: fixed
+	z-index: 11
+	bottom: -50px
+	right: -70px
+	color: #fff
+	cursor: pointer
+	transform: rotate(38deg)
+	@extend %transition
+	@include hoverBg($accentColor, #ff7906)
+
+	span
+		display: inline-block
+		text-align: center
+		transform: rotate(-38deg);
+		margin-top: 50px
+		text-transform: uppercase
+		
+			
+
+
+
+
+
+
+@import 'responsive-footer'

@@ -1,0 +1,227 @@
+.head-main-c
+	padding-top: 10px
+	@media screen and (max-width: 768px)
+		margin-bottom: 10px
+
+//logo
+.head-logo-c 
+	@media screen and (max-width: 360px)
+		width: 50%
+	img
+		width: 100%
+
+//phone-number
+.head-phone-c
+	span
+  font-style: italic
+ 	&:first-of-type
+ 		font-size: 15px
+ 		padding-right: 4px
+ 		@media screen and (max-width: 768px)
+ 			font-size: 16px
+ 			padding-right: 0
+ 	&:last-of-type
+			font-size: 26px
+			font-weight: bold
+			@media screen and (max-width: 768px)
+ 			font-size: 16px
+ 			font-weight: normal
+ 			
+	a
+		font-style: italic
+		vertical-align: top
+		font-size: $base-fsz - 2
+		padding-top: $base-fsz - 8
+  margin-left: $base-fsz - 8
+  @media screen and (max-width: 768px)
+			padding-top: 0
+  	margin-left: 0
+
+
+//seach
+.head-seach-c
+	padding-top: 8px
+
+	.input-group
+		width: 210px
+		@media screen and (max-width: 768px)
+			width: 100%
+
+		.form-control
+			height: 20px
+			font-size: $base-fsz
+			transform: skew(-15deg)
+			border-radius: $base-border-r !important
+			padding: 0 10px
+
+		.input-group-btn
+			button.btn
+				border-radius: $base-border-r !important
+				padding: 0 12px
+				margin-left: -37px
+				font-size: $base-fsz - 2
+				transform: skew(-15deg)
+				z-index: 9
+				background-image: $gradient-color
+
+
+//online-help
+.head-help-c
+	.help
+		display: inline-block
+		border-color: red
+		background-image: $gradient-color
+		font-weight: bold
+		color: $black-color
+		line-height: 1.1
+		width: 84px
+		height: 78px
+		position: relative
+		padding: 5px 0
+
+		img
+			position: absolute
+			left: 0
+			top: -7px
+
+
+		.activiti
+			width: 7px
+			height: 7px 
+			background-color: red
+			border-radius: 50%
+			float: right
+			margin: 0 5px
+
+		.help-text
+			position: absolute
+			bottom: 0
+			width: 100%
+			font-size: $base-fsz - 2
+
+		&.online
+			border-color: $green-color
+			.activiti
+				background-color: $green-color
+
+//user & basket 
+.user-car-c
+	text-align: right	
+	@media screen and (max-width: 360px)
+		position: absolute
+  z-index: 99
+  top: 88px
+  left: -10px
+  
+	 .dropdown-menu-right
+	 	left: 22px
+
+
+	.user
+		@media screen and (max-width: 360px)
+			display: none
+		img
+			vertical-align: middle
+		a
+			font-size: $base-fsz	- 1
+			font-style: normal
+			margin-left: 4px
+			@media screen and (max-width: 768px)
+				font-size: $base-fsz
+				vertical-align: sub
+			&.visible-xs
+				@media screen and (max-width: 768px)
+					display: inline-block !important
+
+	.user-mobile
+		display: none
+  position: absolute
+  left: 0
+  font-size: 27px
+  color: #15689f
+  border: 1px solid #cccccc
+  padding: 4px 13px
+  line-height: 1
+  border-radius: 4px
+  top: 5px
+  background-color: #fff
+  margin-left: 90px
+  @media screen and (max-width: 360px)
+  	display: inline-block
+
+	.cart
+		padding-top: 12px
+		@media screen and (max-width: 768px)
+			padding-top: 5px
+
+		.shop-cart
+			width: 30px
+			position: relative
+			display: inline-block
+			@media screen and (max-width: 768px)
+				width: 24px
+			img
+				width: 100%
+			.number-product
+				position: absolute
+				border: 1px solid grey
+				width: 15px
+				height: 15px
+				text-align: center
+				padding: 0
+				border-radius: 50%
+				background-image: $gradient-color
+				color: $red-color
+				font-weight: 900
+				line-height: 1
+				left: 10px
+				@media screen and (max-width: 768px)
+					left: 7px
+				
+
+		.cart-text
+			color: $link-color
+			font-size: $base-fsz + 8
+			vertical-align: middle
+			font-weight: 900
+			text-decoration: underline
+			font-style: italic
+			@media screen and (max-width: 768px)
+				font-size: $base-fsz + 2
+			@media screen and (max-width: 580px)
+				display: none
+
+		.caret
+			vertical-align: sub
+	  display: inline-block
+	  margin-left: 8px
+	  border-top: 8px dashed $link-color
+	  border-right: 5px solid transparent
+	  border-left: 5px solid transparent
+	  @media screen and (max-width: 580px)
+				display: none
+
+//top-head-links
+.top-head-links 
+	padding-top: 10px
+
+	ul
+		li
+			display: inline-block
+			font-size: 12px
+			margin-right: 10px
+			@media screen and (max-width: 990px)
+				margin-right: 5px
+			img
+				width: 12px
+				vertical-align: text-bottom
+				margin-right: 2px
+			a
+				text-decoration: underline
+				text-shadow: 0.5px 0.5px 0px #fff
+
+
+
+
+
+

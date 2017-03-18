@@ -1,0 +1,33 @@
+.about-content
+	color: #535455
+	h3
+		color: $blueColor
+		margin-top: 0
+		margin-bottom: 20px
+	h4
+		margin-top: 40px
+		margin-bottom: 20px
+		color: $fontColor
+	p
+		font-size: $bfsz + 1
+		margin-bottom: 20px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		li
+			margin: 20px 0
+			padding-left: 15px
+			position: relative
+			&:before
+				content: ''
+				width: 6px
+				height: 6px
+				background-color: $accentColor
+				border-radius: 50%
+				display: inline-bloc
+				position: absolute
+				left: 0
+				top: 8px
+
+@import 'about-responsive'

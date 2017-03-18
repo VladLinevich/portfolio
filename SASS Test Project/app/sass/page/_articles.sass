@@ -1,0 +1,48 @@
+.articles-c
+
+	.title
+		margin: 15px 0	5px 0
+	h4
+		display: inline-block
+  font-size: 20px
+  font-weight: 900
+  font-style: italic
+  padding: 10px 0
+  margin: 0
+  letter-spacing: -0.8px
+	.all-propositions
+		display: inline-block
+		float: right
+		padding-right: 60px
+		@media screen and (max-width: 990px)
+			float: none
+			padding: 0
+			display: block
+			text-align: left
+
+	.articles
+		.article
+			text-align: left
+			a
+				.pic
+					position: relative
+					min-height: 125px
+					@media screen and (max-width: 768px)
+						display: inline-block
+						width: 25%
+						margin-right: 20px
+					img
+						position: absolute
+						bottom: 0
+		.text
+			@media screen and (max-width: 768px)
+				display: inline-block
+				width: 70%
+			@media screen and (max-width: 500px)
+				width: 100%
+			h3.title
+				font-size: $base-fsz + 6
+	   text-decoration: underline
+	   line-height: 1.3
+	   margin-bottom: 10px
+						

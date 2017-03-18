@@ -1,0 +1,56 @@
+.customers-block-с
+
+	.title
+		margin: 15px 0	25px 0
+	h4
+		display: inline-block
+		font-size: $base-fsz
+		font-weight: 900
+		font-style: italic
+		padding: 10px 0
+		margin: 0
+	.all-propositions
+		display: inline-block
+		float: right
+		padding-right: 60px
+		@media screen and (max-width: 990px)
+			float: none
+			padding: 0
+			display: block
+			text-align: left
+
+	.customers
+		@media screen and (max-width: 400px)
+			display: none
+		.pic
+			min-height: 50px
+			text-align: center
+			position: relative
+			padding: 5px
+			border-right: 1px solid #dedddd
+			&:nth-child(8) , &:nth-child(16)
+				border-right: none
+			&:nth-child(4), &:nth-child(8), &:nth-child(12)
+				@media screen and (max-width: 990px)
+					border-right: none
+			@for $i from 1 through 8
+				&:nth-child(#{$i})
+					border-bottom: 1px solid #dedddd
+			@for $i from 1 through 12
+				@media screen and (max-width: 990px)
+					&:nth-child(#{$i})
+						border-bottom: 1px solid #dedddd
+				
+.customers-list 
+	.list
+		padding-top: 20px
+		@media screen and (max-width: 768px)
+			padding-top: 10px
+		@media screen and (max-width: 400px)
+			display: none
+		a
+			display: block
+			text-decoration: underline
+			padding: 3px 0
+			&:hover
+				color: $red-color

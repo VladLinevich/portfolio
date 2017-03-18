@@ -1,0 +1,152 @@
+.sidebar
+	background-color: #f4f2ec
+	border: 1px solid #e1dbce
+	border-left: 0
+	border-radius:  0 5px 5px 0 
+	padding: 20px 25px 20px 20px
+	color: #3f3b30
+	
+	h5
+		text-transform: uppercase
+		margin: 0 0 2px 0
+		font-family: $miriadPro
+		font-size: $bfsz + 3
+
+	p
+		margin-bottom: 10px	
+
+	hr
+		border: 0
+		border-top: 1px solid #ebe7dd
+		margin-left: -20px
+		margin-right: -25px
+		box-shadow: 0 1px #fff
+		margin-top: 0
+		margin-bottom: 20px
+	
+	button.btn-success.with-img
+		@extend %text-shadow-dark
+		@extend %hovered
+		text-transform: uppercase
+		font-family: $klavika
+		background: url(../img/icons/batton-seach.png) no-repeat
+		border: none
+		width: 100%
+		text-align: left
+		padding: 0
+		padding: 11px 0
+		text-align: center
+		background-size: contain
+		line-height: 25px
+		&:active, &:hover, &:focus, &:active:hover
+			box-shadow: none
+			background-color: transparent
+			outline: none
+		&:hover
+			text-shadow: 0px -2px 2px #7ad740
+
+		& > span
+			margin-left: 10px
+			font-size: 16px
+			color: #10951a
+			text-shadow: 1px 1px 0px #7ad740
+
+
+form
+	margin-bottom: 10px
+
+.quick-seach
+	.form-sontrol
+		display: inline-block
+		width: 59%
+		margin-right: 1%
+		&.full-size
+			display: block
+			width: 100%
+
+		
+			input.form-control
+				background-image: none
+
+button.btn-success.gradient
+	@extend %text-shadow-dark
+	@extend %hovered
+	@extend %gradient-green
+	text-transform: uppercase
+	font-family: $klavika
+	padding: 3px 15px
+	vertical-align: baseline
+	&:active, &:hover, &:focus, &:active:hover
+		box-shadow: none
+		background-color: transparent
+		outline: none
+
+				
+.for-select
+	border: 3px solid #e8e5de
+	border-radius: 5px
+	position: relative
+	margin-bottom: 12px
+	background: linear-gradient(to bottom, #ffffff 0%,#f4f3f1 100%,#7db9e8 100%)
+	
+select.form-control
+	border-weight: 2px
+	background-image: url(../img/icons/select-arrow.png)
+	background-repeat: no-repeat
+	background-position: 99% 3px
+	height: 30px	
+	color: #999999
+	box-shadow: inset 0 -1px 0px 0px #fff
+	cursor: pointer
+	-webkit-appearance: none
+	-moz-appearance: none
+	padding: 3px 7px
+	height: 27px
+
+	&:focus
+		border-color: inherit
+		color: #231f20
+		outline: none
+		box-shadow: none
+		border-color: #ccc
+		background-image: url(../img/icons/select-arrow-active.png)
+
+input.form-control
+	@extend select.form-control
+	&:focus, &:hover
+		background-image: none
+
+.form-sontrol
+	input[type='text']
+		background-image: none
+
+//news-sections
+.news-section
+	
+	.news-item
+		margin-bottom: 20px
+
+	h5
+		font-family: $arial
+		font-weight: 600
+		font-size: $bfsz
+		text-transform: none
+	.date
+		font-weight: 600
+		margin-bottom: 3px
+		font-size: $bfsz - 2
+	.news-text
+		font-size: $bfsz - 2
+		max-height: 60px
+		height: 60px 
+		@extend %text-hidden
+
+
+
+
+
+
+
+
+
+

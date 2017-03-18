@@ -1,0 +1,139 @@
+@media (min-width: 1920px)
+
+	// ---------------------------------------------> footer block
+
+	.footer-head
+		padding-top: 60px
+		padding-bottom: 60px
+
+	.footer-head-logo img
+			width: initial
+
+	.footer-head-adress 
+		.item-adress 
+			.icon
+				width: 75px
+				height: 75px
+			.text
+				font-size: 15pt
+
+	.footer-content
+		padding-top: 90px
+		padding-bottom: 40px
+
+	.footer-content-menu
+		width: 71%
+		h5 a
+			font-size: 24pt
+
+	.footer-content-menu ul 
+		li
+			padding-left: 21px
+			padding-bottom: 10px
+			&:before
+				width: 6px
+				height: 6px
+				top: 13px 
+			a
+				font-size: 16pt
+				font-weight: 300
+
+	.footer-content-map
+		width: 28%
+
+	#footer-map
+		height: 290px
+
+	.footer-bottom
+		padding-top: 70px
+		padding-bottom: 70px
+		font-size: 16pt
+		.links
+			font-size: 18pt
+			margin-top: -4px
+		.name-of
+			font-size: 16pt
+
+	.button-up-container
+		width: 170px
+		height: 170px
+		font-size: 16pt
+		bottom: -70px
+		right: -100px
+		span
+			margin-top: 72px
+	//--------------
+
+
+
+@include media(1200)
+
+	.footer-head-logo
+		line-height: 100px
+
+
+	.footer-head-adress .item-adress 
+		.icon
+			margin-right: 0
+			margin-bottom: 10px
+		.text
+			text-align: center
+		
+
+	.footer-content-menu h5
+		font-size: $bfsz
+		margin-bottom: 10px
+
+@include media(990)
+
+	.footer-content
+		padding-top: 20px
+		padding-bottom: 20px
+
+	.footer-content-map
+		padding: 0
+
+@include media(768)
+
+	.footer-head-logo
+		text-align: center
+		
+
+
+	.footer-head
+		padding-top: 0
+
+		&-adress
+			text-align: center
+			
+			.item-adress
+				margin-bottom: 20px
+
+	.footer-bottom 
+		.links
+			text-align: right
+			a
+				margin-right: 0
+		.name-of
+			padding-top: 15px
+			text-align: center
+		
+@include media(475)
+	
+	.footer-head-adress
+		text-align: left
+
+	.footer-head-adress
+		.item-adress
+			width: 100%
+			margin-bottom: 15px
+			.icon
+				display: block
+				margin: 0 auto
+				margin-bottom: 5px
+			.text
+				display: block
+				margin: 0 auto
+			
+	.footer-bottom
+		padding: 15px 0 30px 0

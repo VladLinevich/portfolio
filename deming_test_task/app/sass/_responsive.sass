@@ -1,0 +1,198 @@
+@include media(1200)
+	
+	//height-content
+	.main-content, .sidebar
+		min-height: 1100px
+
+	//sidebar
+	.sidebar 
+		h5
+			font-size: $bfsz
+		p
+			font-size: $bfsz - 2
+
+		button.btn-success.with-img
+			line-height: 1
+
+		.quick-seach .form-sontrol
+			width: 100%
+			display: block
+
+		.for-select
+			margin-bottom: 5px
+
+		.news-text
+			font-size: $bfsz - 3
+
+	//footer
+	.center-f ul li
+		display: inline-block
+		float: left
+		min-width: 125px
+		font-size: 14px
+		margin-top: 4px
+		vertical-align: top
+		padding-left: 10px
+
+
+@include media(990)
+	
+	//tab header
+	.tab-item img
+		height: 105px
+
+	.tab .text
+		font-size: $bfsz
+
+	//tab content
+	.tab h4
+		font-size: $bfsz
+
+	.tab-item p
+		font-size: $bfsz - 2 
+
+	//sidebar
+	.news-section .news-item
+		margin-bottom: 10px
+		.news-text
+			max-height: 55px
+
+	.for-button
+		display: block
+		button
+			width: 100%
+			display: block
+
+	.sidebar button.btn-success.with-img
+		font-size: $bfsz - 4
+		padding-top: 3px
+
+	.sidebar 
+			h5
+				font-size: $bfsz - 2
+			p
+				font-size: $bfsz - 4
+
+	//footer
+	.footer .footer-top
+		line-height: 25px
+	.center-f
+		display: none
+
+	
+
+@include media(768)
+
+	//height-content
+	.main-content, .sidebar
+		min-height: initial
+
+	//menu
+
+	.top-menu-container
+		display: none
+
+	.mobile-mnu, .navbar-toggle
+		display: inline-block
+
+	.top-header
+		padding: 10px 0
+		border-bottom: 1px solid rgba(153, 153, 153, 0.33)
+
+	.top-header-left
+		width: 100%
+		text-align: center
+		
+
+	.top-header-right
+		width: 100%
+		text-align: center
+		padding-top: 10px
+		p
+			font-size: $bfsz - 6
+		.phone-top
+			font-size: $bfsz + 5
+
+	.top-header-right-menu
+		text-align: center
+		li
+			font-size: $bfsz - 4
+			margin: 0px 8px
+			text-decoration: underline
+
+	//breadcrumbs
+	.breadcrumb
+		padding: 0
+		font-size: $bfsz - 2
+		margin: 3px 0
+
+	//content
+	.main-content
+		border-radius: 5px
+
+
+	//tab-header
+	.nav-tabs.nav-justified>li
+		display: table-cell
+		width: 1%	
+
+	//tab-content
+	.tab-item 
+		padding: 5px 0
+		img
+			height: 140px
+			max-height: 140px
+
+	//sidebar
+	.news-section
+		margin-top: 20px
+
+	.sidebar button.btn-success.with-img
+		font-size: $bfsz - 4
+		padding-top: 5px
+		max-width: 160px
+
+	.news-item
+		border-bottom: 1px solid #e8e5de	
+
+	//footer
+	.right-f
+		text-align: center
+		p
+			margin-left: 0
+
+
+@include media(500)
+	
+	.news-block 
+		.news-desc h2
+			font-size: $bfsz + 6
+			font-family: $zurichBold
+		p
+			font-size: $bfsz - 4
+		img
+			bottom: 0
+			z-index: 10
+			opacity: 0.5
+
+	//tab-header
+	.tab 
+		.text, .arrow-icon
+			display: none
+		.mobile-icon
+			display: inline-block
+			margin-top: 5px
+
+	.nav-tabs.nav li a:after
+		left: 47%
+
+	//footer
+	.footer 
+		.footer-content
+			font-size: $bfsz - 2
+		
+		h6
+			font-size: $bfsz + 2
+
+
+

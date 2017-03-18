@@ -1,0 +1,264 @@
+.navbar
+	border: none
+	margin-bottom: 0
+	box-shadow: 0 3px 10px -5px
+	background-color: #fff
+
+.navbar-nav>li
+	&>a
+		line-height: 50px
+		text-transform: uppercase
+		color: $fontColor
+		padding-left: 8px
+		padding-right: 8px
+		font-size: $bfsz - 2
+		&:hover, &:focus
+			background-color: #f6f9f9
+			color: $blueColor
+			border: 2px solid #f3f5f6
+			padding: 13px 6px
+
+		// --> For language change
+		&.change-lang
+			color: $blueColor
+			&:hover, &:focus
+				background-color: #fff
+				border-color: #fff
+			span
+				vertical-align: middle
+				top: -2px
+				margin-left: 5px
+			+ .dropdown-menu
+				width: calc(100% + 4px)
+				min-width: 100%
+				padding: 0
+				text-align: center
+				left: -2px
+				background-color: #fff
+				li
+					margin: 12px 0
+					a 
+						padding: 0
+
+	&.dropdown.open
+		&:after
+			content: ''
+			position: absolute
+			width: calc(100% - 4px)
+			height: 4px
+			background-color: #f6f9f9
+			top: calc(100% - 2px)
+			left: 2px
+			z-index: 9999
+		&.change-lang-container
+			&:after
+				background-color: #fff
+		
+	.dropdown-menu
+		@extend %navbar-li
+		box-shadow: none
+		padding: 35px 20px 0px 30px
+		min-width: 270px
+		li>a
+			&:focus, &:hover
+				background-color: initial
+				color: #ff9f06
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+	@extend %navbar-li
+	color: $blueColor
+
+
+.navbar-brand
+	height: 80px
+	padding: 5px 15px
+
+	img
+		width: 95%
+
+.navbar-right .dropdown-menu
+	left: 0
+	right: auto
+
+.sub-menu-container
+	font-size: $bfsz - 2
+	span
+		text-transform: uppercase
+
+	.sub-menu
+		padding-left: 0
+		li
+			margin: 15px 0
+			list-style-type: none
+			&:before
+				content: "\2212"
+				margin-right: 10px
+				color: #818181
+			&:last-of-type
+				margin-bottom: 25px
+			&:hover
+				&::before
+					@extend %transition
+					color: #ff9f06
+			a
+				text-decoration: none
+				@extend %transition
+				@include hover(#818181, #ff9f06)
+
+.navbar-right > li
+	border-left: 2px solid #f3f5f6
+	&:last-of-type
+		margin-right: -15px
+		background-color: $blueColor
+		a
+			color: #fff
+			background-color: $blueColor
+			border-color: $blueColor
+			&:hover
+				background-color: #1b86ca
+				border-color: #1b86ca
+			i
+				display: none
+				
+
+// seach header form
+#seach	
+	padding: 20px 50px
+	background-color: #fff
+	position: absolute
+	top: 80px
+	z-index: 9
+
+	.form-control
+		border: none
+		box-shadow: none
+		font-style: italic
+	.btn
+		border: none
+		padding: 0 10px
+		i
+			font-size: 22px
+			@extend %transition
+		.glyphicon-search
+			@include hover($blueColor, #1b86ca)
+		.glyphicon-remove-circle
+			font-size: 28px
+			@include hover(#dce3e3, $fontColor)
+
+
+	.btn-default:hover
+		background-color: #fff
+	.btn.active, .btn:active
+		box-shadow: none
+	.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+		background-color: #fff
+		outline: none
+
+//colback form header
+.call-back-form-container
+	position: absolute
+	padding: 20px 30px
+	background-color: $blueColor
+	top: 0
+	right: 0
+	width: 40%
+	min-width: 320px
+	display: none
+	z-index: 13
+
+	.close-form
+		display: inline-block
+		cursor: pointer
+		float: right
+
+	h4
+		font-size: $bfsz + 11
+		font-weight: bold
+		color: #fff
+		text-transform: uppercase
+		margin-top: 60px
+		margin-bottom: 30px
+		text-align: center
+
+	.form-group
+		background-color: rgba(255, 255, 255, 0.35)
+		height: 40px
+		padding-top: 2px
+		color: #fff
+		.control-label
+			text-align: left
+			font-weight: normal
+			white-space: nowrap
+
+	.form-control
+		background-color: initial
+		box-shadow: none
+		border: none
+		font-style: italic
+		color: #fff
+
+	.textarea-group
+		height: 100px
+		overflow: hidden;
+
+.back-call-back-form
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: rgba(255, 255, 255, 0.7)
+	top: 0
+	left: 0
+	z-index: 12
+	display: none
+
+.submit-form-container
+	text-align: center
+	margin-top: 30px	
+	
+.navbar-toggle .icon-bar
+	background-color: #337ab7
+
+.contact-form-mobile
+	display: inline-block
+	float: right
+	font-size: 20px
+	margin-top: 12px
+	margin-right: 3px
+	display: none
+	
+.phone-header-mobile
+	@extend .contact-form-mobile
+	margin-right: 15px
+	border-left: 1px solid #eee
+	border-right: 1px solid #eee
+	padding: 0 3px
+	font-size: $bfsz
+	margin-top: 17px
+
+.seach-header-mobile
+	@extend .contact-form-mobile
+	margin-top: 13px
+	margin-right: 12px
+
+.language-header-mobile
+	@extend .contact-form-mobile
+	background-color: inherit
+	border: none
+	color: #337ab7
+	margin-top: 15px
+	margin-right: 5px
+	font-size: $bfsz
+	
+
+.dropdown-language
+	float: right
+
+.mobile-elements-container, 
+	float: right
+
+
+.main-pic
+	height: 800px
+	background-color: #ff7c7c
+
+@import 'restponsive-header'

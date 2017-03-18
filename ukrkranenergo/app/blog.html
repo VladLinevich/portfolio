@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Test_deming_task</title>
+	
+<!-- /* styles */ -->
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+<!-- ====== -->	
+</head>
+
+<body>
+
+<!-- /*HEADER*/ -->
+
+<nav class="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+    	<div class="mobile-elements-container">
+    		<div class="mobile-elements">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="contact-form-mobile" href="#call-back"><i class='glyphicon glyphicon-earphone'></i></a>
+		      <div class="phone-header-mobile">+3 057-337-97-76</div>
+					<a href="#seach" data-toggle="collapse" class="seach-header-mobile"><span class="glyphicon glyphicon-search"></span></a>
+					<div class="dropdown dropdown-language">
+					  <button class="dropdown-toggle change-lang language-header-mobile" type="button" data-toggle="dropdown">Рус<span class="glyphicon glyphicon-menu-down"></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Eng</a></li>
+					    <li><a href="#">Укр</a></li>
+					  </ul>
+					</div>
+				</div>
+      </div>
+
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Деятельность</a></li> 
+        <li class="dropdown">
+        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Проекты</a>
+	        <ul class="dropdown-menu">
+	          <li class="sub-menu-container"><span>технологические направления</span>
+							<ul class="sub-menu">
+								<li><a href="#">Тепловая энергетика</a></li>
+								<li><a href="#">Атомная энергктика</a></li>
+								<li><a href="#">Промышленное строительство</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+							</ul>
+	          </li>
+	          <li class="sub-menu-container"><span>Крановое направление</span>
+							<ul class="sub-menu">
+								<li><a href="#">Грузоподъемная техника</a></li>
+								<li><a href="#">Погрузочная техника</a></li>
+								<li><a href="#">Реконструкция</a></li>
+								<li><a href="#">Диагностика</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+							</ul>
+	          </li>
+	        </ul>
+        </li> 
+        <li><a href="#">Новости</a></li> 
+        <li><a href="#">Контакты</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#seach" data-toggle="collapse"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a href="#">+3 057-337-97-76</a></li>
+        <li class="dropdown change-lang-container">
+        	<a class="dropdown-toggle change-lang" data-toggle="dropdown" href="#">Рус<span class="glyphicon glyphicon-menu-down"></a>
+	        <ul class="dropdown-menu">
+	        	<li><a href="#">Eng</a></li>
+	        	<li><a href="#">Укр</a></li>
+	        </ul>
+	      </li> 
+	      <li><a href="#call-back"><span>ОБРАТНАЯ СВЯЗЬ</span><i class='glyphicon glyphicon-earphone'></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- seach-form -->
+<div id="seach" class="collapse">
+	<form>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="поиск">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+      <button class="btn btn-default" data-toggle="collapse" data-target="#seach" type="submit">
+        <i class="glyphicon glyphicon-remove-circle"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+<!-- seach form end -->
+
+<!-- Call-back form -->
+<div class="call-back-form-container" id='call-back'>
+	<div class='close-form'><img src="img/close_white.png" alt="close"></div>
+	<h4>Обратная связь</h4>
+
+	<form class="form-horizontal">
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="name">Ваше имя:</label>
+    <div class="col-md-10  col-sm-12">
+      <input type="text" class="form-control" id="name" placeholder="Поле обязательно для заполнения">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="phone">Телефон:</label>
+    <div class="col-md-10 col-sm-12"> 
+      <input type="phone" class="form-control" id="phone" placeholder="Поле обязательно для заполнения">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="email">Ваше Email:</label>
+    <div class="col-md-10 col-sm-12">
+      <input type="email" class="form-control" id="email">
+    </div>
+  </div>
+
+  <div class="form-group textarea-group">
+    <label class="control-label col-md-3 col-sm-12" for="email">Ваше сообщение:</label>
+    <div class="col-md-9 col-sm-12">
+      <textarea class="form-control" rows='8' placeholder="Поле обязательно для заполнения"></textarea>
+    </div>
+  </div>
+
+	<div class="submit-form-container">
+	  <button type='submit' class='orange-circle'>+</button>
+		<p class="orange-circle-title">Отправить</p>
+	</div>
+
+</form>
+</div>
+<div class='back-call-back-form'></div>
+<!-- Call-back form end -->
+
+<!-- /*HEADER END*/ -->
+
+<!-- /*CONTENT*/ -->
+
+<!-- Breadcrumbs -->
+<div class="container">
+	<ul class="breadcrumb">
+    <li><a href="#">Главная</a></li>
+    <li class="active">Новости</li>
+	</ul>
+</div>
+<!-- =========== -->
+
+<div class="container news-container">
+
+	<div class="title-block">
+		<h2>Новости</h2>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-1.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-2.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-3.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-9.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-5.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-6.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-7.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-8.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+	<div class="col-md-4 col-sm-4 col-xs-6 item-news">
+		<div class="img-item">
+			<img src="img/blog/blog-4.png" alt="bloc-1">
+			<div class="img-item-cover"></div>
+			<div class="img-item-text">
+				<p class="date">29.01.2016</p>
+				<p class="text">Раскрепление котла производительностью D=2650т/час при проведении РВР</p>
+			</div>
+		</div>
+		<a class="button-more" href="#">
+			<div class="orange-circle">+</div><span>Подробнее</span>
+		</a>
+	</div>
+
+</div>
+
+<!-- Pagination -->
+
+<div class="container-fluid pagination-container">
+	<div class="pagination">
+	  <a href="#"><i class="glyphicon glyphicon-menu-left"></i></a>
+	  <a href="#">1</a>
+	  <a href="#" class="active">2</a>
+	  <a href="#">3</a>
+	  <a href="#">4</a>
+	  <a href="#">5</a>
+	  <a href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
+	</div>
+</div>
+
+<!-- ========== -->
+
+
+<!-- /*CONTENT END*/-->
+
+
+<!-- /*FOOTER*/ -->
+<footer>
+	<div class="container footer-head">
+		<div class="col-md-4 col-sm-4 footer-head-logo">
+			<a href="#"><img src="img/logo-white.png" alt="logo"></a>
+		</div>
+		<div class="col-md-8 col-sm-8 footer-head-adress">
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Адресс:</strong><br>6105, г. Харьков<br>ул. Ключаковская, 27б</div>
+			</div>
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Email:</strong><br>ukemp@ukemp.org</div>
+			</div>
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Телефон/факс:</strong><br>+38 057-337-97-76</div>
+			</div>
+		</div>
+	</div>
+	<div class="container footer-content">
+		<div class="col-md-8 footer-content-menu">
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">О компании</a></h5>
+				<ul>
+					<li><a href="#">История</a></li>
+					<li><a href="#">Информация Эммитента</a></li>
+					<li><a href="#">Лицензии и свидетельство</a></li>
+					<li><a href="#">Система качества</a></li>
+					<li><a href="#">Клиенте</a></li>
+					<li><a href="#">Партнеры</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Дятельность</a></h5>
+				<ul>
+					<li><a href="#">Тепловая энергетика</a></li>
+					<li><a href="#">Атомная энергетика</a></li>
+					<li><a href="#">Грузоподъемная техника</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Технологические направления</a></h5>
+				<ul>
+					<li><a href="#">Тепловая энергетика</a></li>
+					<li><a href="#">Атомная энергетика</a></li>
+					<li><a href="#">Отзывы клиентов</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Крановое направление</a></h5>
+				<ul>
+					<li><a href="#">Грузородъемная техника</a></li>
+					<li><a href="#">Погрузочная техника</a></li>
+					<li><a href="#">Реконструкция</a></li>
+					<li><a href="#">Диагностика</a></li>
+					<li><a href="#">Отзывы клиентов</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 footer-content-map">
+			<div id="footer-map"></div>
+		</div>
+	</div>
+	<div class="container footer-bottom">
+		<div class="col-md-3 col-sm-3 col-xs-6 rules">© 2017 ЧАО «ПТКИ «УКРАНЭНЕРГО»</div>
+		<div class="col-md-6 col-sm-6 col-xs-6 text-center links">
+			<a href="#">Новости</a>
+			<a href="#">Контакты</a>	
+		</div>
+		<div class="col-md-3 col-sm-3 col-xs-12 name-of">Дизайн и разработка - <a href="#"><img src="img/it-works-logo.png" alt="it-works-logo"></a></div>
+	</div>
+</footer>
+
+<div class="button-up-container">
+	<span>&uarr;<br>Вверх</span>
+</div>
+<!-- /*FOOTER END*/ -->	
+
+<!-- /* sctipts */ -->
+<script src="libs/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/mapAPI.js"></script>
+<script src="js/common.js"></script>
+<!-- ======= -->
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+//fonts
+@font-face 
+ font-family: Century_Gothic /* Имя шрифта */
+ src: url(../fonts/Century_Gothic/Century_Gothic.ttf) /* Путь к файлу со шрифтом */
+  
+body
+	font-size: 13px
+	font-family: 'Arial', sans-serif
+
+a
+	color: $link-color
+	text-decoration: none
+
+	&:hover
+		text-decoration: none
+	
+	&.dott-link
+		font-style: italic
+		display: inline-block
+		border-bottom: 1px dashed $link-color
+
+ul
+	list-style-type: none
+	padding: 0
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+	background-color: initial
+	color: initial
+

@@ -1,0 +1,189 @@
+.top-menu
+	.navbar-default
+		background: $top-menu-gradient
+		border: 1px solid #246188
+		@media screen and (max-width: 768px)
+				border-radius: 5px
+		.container-fluid
+			padding: 0
+			@media screen and (max-width: 768px)
+				padding: 0  15px 0 15px
+
+				.navbar-toggle
+					background-color: #fff
+
+	.navbar-collapse
+		padding-left: 0
+		padding-right: 0
+	
+
+
+.top-menu
+	ul.nav
+		&.navbar-nav
+			margin: 0
+		>li
+			width: 189.6px
+			height: 58px
+			box-shadow: inset 1px 1px 0px #5a95bb
+			border-right: 1px solid $black-color
+			position: relative
+			@media screen and (max-width: 1200px)
+				width: 156.3px
+			@media screen and (max-width: 990px)
+				width: 119.6px
+				font-size: $base-fsz - 2
+			@media screen and (max-width: 768px)
+				width: 100%
+				height: 58px
+				font-size: $base-fsz
+
+			&:hover
+				background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(185,185,185,1) 40%, rgba(255,255,255,1) 100%);
+				border: 5px solid $light-blue
+				border-radius: 5px 5px 0 0
+				box-shadow: 1px -1px 6px 0px #000
+				&:last-of-type
+					border-right: 5px solid $light-blue
+				a
+					color: $link-color
+					text-shadow: none
+					text-decoration: underline
+					padding-top: 5px
+					padding-left: 10px
+					padding-right: 10px
+					
+
+			&.dropdown:hover
+				border-bottom: 0
+
+			&:last-of-type
+				border-right: none
+
+			&.dropdown:after
+				content: " "
+				top: 22px
+				left: calc(100% - 20px)
+				display: block
+				width: 0
+    height: 0
+    border-left: 7px solid transparent
+    border-right: 7px solid transparent
+    border-top: 11px solid #6597b7
+				position: absolute
+			
+			>a
+				font-weight: 600
+				color: #fff
+				padding-top: 10px
+				text-shadow: 0 1px 0 #050606
+				@media screen and (max-width: 990px)
+						padding-left: 5px
+				@media screen and (max-width: 768px)
+						padding-left: 15px
+						height: 100%
+
+			div.dropdown-menu
+				border: 5px solid $light-blue
+				border-radius: 0 5px 5px 5px
+				box-shadow: 3px 3px 6px -2px #000
+				top: calc(100% + 5px)
+				@media (max-width: 768px)
+					width: calc(100% + 10px) !important
+	    left: 0 !important
+	    border-top: 0
+	    margin-left: -5px
+	    border-top-right-radius: 0
+	    border-top-left-radius: 0
+	    position: absolute
+	    margin-top: -5px
+	    background-color: #fff
+
+				&:before
+					content: ""
+	    display: block
+	    height: 10px
+	    position: absolute
+	    background-color: white
+	    top: -10px
+	    border-left: 5px solid $light-blue
+	    border-right: 5px solid $light-blue
+	    @media (max-width: 990px)
+	    	border-right: 6px solid $light-blue
+	    @media (max-width: 768px)
+	    	display: none
+
+	   .dropdown-menu-inner
+					display: inline-block
+					vertical-align: top
+					margin-right: 20px
+					@media (max-width: 990px)
+						margin-right: 0
+						max-width: 200px
+					@media (max-width: 768px)
+						max-width: initial
+						width: 100%
+						padding-bottom: 5px
+						border-top: 1px solid $light-blue
+						box-shadow: inset 1px 3px 10px -5px $black-color
+					li
+						padding-top: 5px
+						@media screen and(max-width: 768px)
+								font-size: $base-fsz + 1
+						a:hover
+									color: $red-color
+						&.title
+							font-size: $base-fsz + 2
+							padding-bottom: 5px
+							font-weight: 600
+							@media screen and(max-width: 768px)
+								padding-bottom: 0
+								padding-top: 10px
+							a
+								color: $black-color
+
+
+
+
+@for $i from 1 through 6
+	$menu-L: 1138px
+	$menu-M: 938px
+	$menu-S: 718px
+
+	.top-menu ul.nav > li:nth-child(#{$i}) > div.dropdown-menu
+		@media screen and(max-width: 1920px)
+			width: $menu-L
+			left: -(($menu-L/6)*($i - 1)) - 5
+			&:before
+				left: ($menu-L/6)*($i - 1) - 5
+				width: ($menu-L/6)
+		@media screen and(max-width: 1200px)
+			width: $menu-M
+			left: -(($menu-M/6)*($i - 1)) - 5
+			&:before
+				left: ($menu-M/6)*($i - 1) - 5
+				width: ($menu-M/6) - 2
+		@media (max-width: 990px)
+			width: $menu-S
+			left: -(($menu-S/6)*($i - 1)) - 5
+			&:before
+				left: ($menu-S/6)*($i - 1) - 5
+				width: ($menu-S/6) + 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+

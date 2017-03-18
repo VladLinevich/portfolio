@@ -1,0 +1,394 @@
+@media (min-width: 1920px)
+
+	// ---------------------------------------------> big image block
+	.top-content-img
+		max-height: 865px
+
+	//this variable regulate proportion's dependence of font-size
+	$prewieText: 36
+
+	.top-container-text 
+		font-size: #{$prewieText}pt
+		font-weight: 400
+		top: 12%
+		.big
+			font-size: #{$prewieText + 28}pt
+			font-weight: normal
+			&.orange
+				font-size: #{$prewieText + 44}pt
+		.orange-block 
+			padding: 0 30px 0px 15px
+			margin-top: #{-($prewieText + 39)}px
+			span
+				font-size: #{$prewieText + 56}pt
+				font-weight: 500
+		.orange-medium
+			font-size: #{$prewieText + 14}pt
+		.text-block
+			padding-bottom: 60px
+		.button-down
+			margin-top: 140px
+			width: 45px
+			line-height: 45px
+			font-size: 18px
+			.hvr-icon-hang
+				padding-right: 2em
+				&:before
+					top: -25px
+
+		.read-more
+			font-size: 14pt
+			margin-top: 80px
+			i
+				top: -2px
+	//---------------
+
+	// ---------------------------------------------> features block
+	.features-block
+		padding-top: 135px
+		.title-block h2
+			font-size: 36pt
+			background-color: #fff
+			margin-bottom: 20px
+			top: -28px
+
+		.features-block-preview-text
+			width: 60%
+			margin: 0 auto
+			font-size: 17pt
+			text-align: center
+			color: #535455
+			font-style: italic
+			font-weight: 100
+			margin-bottom: 80px
+
+	.img-features
+		min-height: 605px
+
+	.desc-features 
+		.item
+			margin-bottom: 50px
+			&:after
+				top: 42px
+				left: 78px
+
+			&:hover:after
+				width: 80%
+			.title-item 
+				h3
+					font-size: 25pt
+				.desc-item
+					font-size: 13pt
+			.number-item
+				font-size: 78pt
+			img
+				width: 60px
+	//---------------
+
+	// ---------------------------------------------> company news block
+	.company-news-container
+		margin-top: 120px
+		padding-bottom: 60px
+		.title-block
+			margin-bottom: 50px
+		.img-container
+			max-width: 340px
+			height: 260px
+			margin-right: 50px
+
+		.news-item
+			.date, h4, .desc
+				font-size: 16pt
+
+			.read-more
+				font-size: 14pt
+				padding: 10px 35px
+				border-radius: 30px
+
+		.read-more-news
+			margin-top: 110px
+			.orange-circle-title
+				font-size: 20pt
+	//---------------
+
+	// ---------------------------------------------> map client block
+	.map-container
+		height: 950px
+		margin-bottom: 130px
+		h2
+			margin-top: 70px
+			font-size: 36pt
+		.object-numbers
+			margin-bottom: 100px
+			> div 
+				.numbers
+					font-size: 80pt 
+					span
+						font-size: 38pt
+					#big-object
+						font-size: 80pt
+				.title
+					font-size: 18pt
+			.desc-objects
+				font-size: 14pt
+				width: 620px
+				margin-left: 100px
+	//---------------
+
+	// ---------------------------------------------> about company block
+	.top-about-company
+		h3
+			font-size: 29pt
+		h4
+			font-size: 25pt
+		p
+			font-size: 14pt
+			max-height: initial
+		.col-md-9
+			padding-left: 75px
+
+	.strvices-list
+		padding-left: 75px
+
+	.company-services-container 
+
+		h3:after
+			width: 55px
+
+		.about-company
+			padding: 70px 70px 100px 70px
+			width: 80%
+
+		.strvices-title
+			font-size: 18pt
+			padding-top: 7px
+	
+
+	.about-company-more-item span
+		font-size: 18px
+
+	.company-services-container.content-container .border-right
+		right: -60px
+
+	.about-company-more
+		min-height: 560px
+		width: 19%
+		p
+			font-size: 20pt
+
+	.company-services-container.content-container
+		&.content-container
+		.border-top
+			top: -40px
+			left: initial
+			right: 0
+			width: calc(100% - 50px)
+		.border-bottom
+			bottom: 40px
+			left: initial
+			right: 0
+			width: calc(100% - 50px)
+		.border-left
+			left: 50px
+			top: -40px
+		.border-right
+			right: -45px
+			top: -40px
+	//---------------
+
+	// ---------------------------------------------> client company block
+
+	.company-clients-container
+		margin-top: 100px
+		padding-top: 120px
+		padding-bottom: 100px
+
+		.slogan 
+			font-size: 17pt
+			max-width: 900px
+			margin-bottom: 70px
+
+		.item-client
+			height: 245px
+	//---------------
+
+@include media(1200)
+
+	// ---------------------------------------------> features block
+	.desc-features .item .title-item .desc-item 
+		max-height: 40px
+	//---------------
+
+	// ---------------------------------------------> company news block
+	.company-news-container 
+		img
+			float: none
+			margin-right: 0
+			margin-bottom: 20px
+	//---------------
+
+
+@include media(990)
+
+	// ---------------------------------------------> company news block
+	.company-news-container 
+		.news-item
+			margin-bottom: 15px
+			border-bottom: 1px solid #eee
+			padding-bottom: 15px
+
+		img
+			float: none
+			width: 100%
+			max-width: 100%
+	//---------------	
+
+	// ---------------------------------------------> company services block
+
+	.company-services-container 
+		h3, .strvices-title
+			margin-bottom: 20px
+
+	.about-company-more
+		min-height: 150px
+	//---------------	
+
+
+	// ---------------------------------------------> company client block
+	.company-clients-container .item-client
+		height: 120px
+
+	//---------------
+
+
+@include media(768) 
+
+	.top-container-text
+		top: 5%
+		font-size: $bfsz + 4
+
+		.orange-block
+			padding: 0px 15px 0px 10px
+
+		.button-down
+			margin-top: 5%
+
+	// ---------------------------------------------> features block
+	.img-features
+		width: 100%
+		padding: 0	
+	//---------------
+
+	// ---------------------------------------------> company services block
+	.about-company-more-item 	
+		margin-bottom: 15px
+		img
+			width: 45px
+
+	.company-services-container.content-container 
+		.border-left
+			left: 25px
+		.border-right
+			right: 20px
+		.border-top
+			right: 50px
+			width: calc(100% - 75px)	
+		.border-bottom
+			right: 50px
+			width: calc(100% - 75px)	
+	//---------------	
+
+	// ---------------------------------------------> company client block
+	.company-clients-container .item-client img
+		width: 100px
+
+	//---------------
+
+	// ---------------------------------------------> map client block
+	.map-container
+		display: none
+
+	//---------------
+
+
+
+
+@include media(600) 
+
+	.top-container-text
+    font-size: $bfsz
+
+    .big
+    	font-size: 20px
+
+    	&.orange
+    		font-size: 30px
+
+    .read-more
+    	margin-top: 20px
+
+
+@include media(600) 
+	.top-container-text
+		font-size: 11px
+		.orange-block
+			padding: 5px
+			margin: -20px 0
+			span 
+				font-size: 20px
+
+
+@include media(520) 
+
+	// ---------------------------------------------> company services block
+
+	.company-services-container 
+		.about-company
+			padding: 30px 30px 20px 20px
+
+		h3, .strvices-title
+			margin-bottom: 30px
+
+
+	.company-services-container.content-container 
+		.border-top, .border-bottom
+			right: 35px
+			width: calc(100% - 60px)	
+	//---------------	
+
+	// ---------------------------------------------> company news block
+	
+	.company-news-container
+		.img-container
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 10px
+
+	//---------------
+@include media(420)
+	.button-down
+		 display: none
+
+	// ---------------------------------------------> features block
+	.img-features
+		min-height: 200px
+	//---------------
+
+	// ---------------------------------------------> company news block
+	.company-news-container 
+		margin-top: 40px
+		padding-bottom: 20px
+	
+		.title-block
+			margin-bottom: 20px
+
+		.read-more-news
+			margin-top: 20px
+		
+	//---------------	
+
+	// ---------------------------------------------> company client block
+	.company-clients-container .item-client img
+		width: 50%
+
+	//---------------

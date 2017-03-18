@@ -1,0 +1,26 @@
+//top hrader
+
+.top-header
+	padding: 20px 0
+
+.top-header-right
+	p
+		@extend %text-shadow
+		font-family: $miriadPro
+		margin-bottom: 0
+
+	.phone-top
+		font-size: $bfsz + 8
+		line-height: $bfsz + 8
+		font-family: $miriadPro
+
+.top-header-right-menu 
+	padding-top: 10px
+	font-family: $zurihcNormal
+	li
+		display: inline-block
+		text-transform: uppercase
+		margin-left: 20px
+		a
+			@extend %hovered
+			@include hover($green, $greenHover)

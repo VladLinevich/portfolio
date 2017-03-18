@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Test_deming_task</title>
+	
+<!-- /* styles */ -->
+	<link rel="stylesheet" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="libs/Hover-master/css/hover-min.css">
+	<link rel="stylesheet" href="css/main.css">
+<!-- ====== -->	
+</head>
+
+<body>
+
+<!-- /*HEADER*/ -->
+
+<nav class="navbar">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+    	<div class="mobile-elements-container">
+    		<div class="mobile-elements">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		      <a class="contact-form-mobile" href="#call-back"><i class='glyphicon glyphicon-earphone'></i></a>
+		      <div class="phone-header-mobile">+3 057-337-97-76</div>
+					<a href="#seach" data-toggle="collapse" class="seach-header-mobile"><span class="glyphicon glyphicon-search"></span></a>
+					<div class="dropdown dropdown-language">
+					  <button class="dropdown-toggle change-lang language-header-mobile" type="button" data-toggle="dropdown">Рус<span class="glyphicon glyphicon-menu-down"></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#">Eng</a></li>
+					    <li><a href="#">Укр</a></li>
+					  </ul>
+					</div>
+				</div>
+      </div>
+
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Деятельность</a></li> 
+        <li class="dropdown">
+        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Проекты</a>
+	        <ul class="dropdown-menu">
+	          <li class="sub-menu-container"><span>технологические направления</span>
+							<ul class="sub-menu">
+								<li><a href="#">Тепловая энергетика</a></li>
+								<li><a href="#">Атомная энергктика</a></li>
+								<li><a href="#">Промышленное строительство</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+							</ul>
+	          </li>
+	          <li class="sub-menu-container"><span>Крановое направление</span>
+							<ul class="sub-menu">
+								<li><a href="#">Грузоподъемная техника</a></li>
+								<li><a href="#">Погрузочная техника</a></li>
+								<li><a href="#">Реконструкция</a></li>
+								<li><a href="#">Диагностика</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+							</ul>
+	          </li>
+	        </ul>
+        </li> 
+        <li><a href="#">Новости</a></li> 
+        <li><a href="#">Контакты</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#seach" data-toggle="collapse"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a href="#">+3 057-337-97-76</a></li>
+        <li class="dropdown change-lang-container">
+        	<a class="dropdown-toggle change-lang" data-toggle="dropdown" href="#">Рус<span class="glyphicon glyphicon-menu-down"></a>
+	        <ul class="dropdown-menu">
+	        	<li><a href="#">Eng</a></li>
+	        	<li><a href="#">Укр</a></li>
+	        </ul>
+	      </li> 
+	      <li><a href="#call-back"><span>ОБРАТНАЯ СВЯЗЬ</span><i class='glyphicon glyphicon-earphone'></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- seach-form -->
+<div id="seach" class="collapse">
+	<form>
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="поиск">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+      <button class="btn btn-default" data-toggle="collapse" data-target="#seach" type="submit">
+        <i class="glyphicon glyphicon-remove-circle"></i>
+      </button>
+    </div>
+  </div>
+</form>
+</div>
+<!-- seach form end -->
+
+<!-- Call-back form -->
+<div class="call-back-form-container" id='call-back'>
+	<div class='close-form'><img src="img/close_white.png" alt="close"></div>
+	<h4>Обратная связь</h4>
+
+	<form class="form-horizontal">
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="name">Ваше имя:</label>
+    <div class="col-md-10  col-sm-12">
+      <input type="text" class="form-control" id="name" placeholder="Поле обязательно для заполнения">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="phone">Телефон:</label>
+    <div class="col-md-10 col-sm-12"> 
+      <input type="phone" class="form-control" id="phone" placeholder="Поле обязательно для заполнения">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-md-2 col-sm-12" for="email">Ваше Email:</label>
+    <div class="col-md-10 col-sm-12">
+      <input type="email" class="form-control" id="email">
+    </div>
+  </div>
+
+  <div class="form-group textarea-group">
+    <label class="control-label col-md-3 col-sm-12" for="email">Ваше сообщение:</label>
+    <div class="col-md-9 col-sm-12">
+      <textarea class="form-control" rows='8' placeholder="Поле обязательно для заполнения"></textarea>
+    </div>
+  </div>
+
+	<div class="submit-form-container">
+	  <button type='submit' class='orange-circle'>+</button>
+		<p class="orange-circle-title">Отправить</p>
+	</div>
+
+</form>
+</div>
+<div class='back-call-back-form'></div>
+<!-- Call-back form end -->
+
+<!-- /*HEADER END*/ -->
+
+<!-- /*CONTENT*/ -->
+
+
+<!-- Top picture -->
+<div class="container-fluid top-content-container">
+	<div class="top-content-img"><img src="img/main-page/header-pic.jpg" alt=""></div>
+	<div class="top-content-cover"></div>
+		<div class="top-container-text">
+			<div class="text-block">
+				<span class="big">За последние</span> <span class="orange big">30 лет</span> <br> по проэктам "УКРКРАНЭНЕРГО" сомонтировано <span class="orange-block">более <span>25</span></span><br> энергоблоков в <span class="orange-medium">14 странах</span> мира
+			</div>
+			<div class="text-centrer">
+				<a href="#" class="read-more">Читать подробнее <i class="glyphicon glyphicon-menu-right"></i></a>
+			</div>	
+			<div class="text-centrer">
+				<div class="button-down glyphicon">
+					<div class="glyphicon-menu-down hvr-icon-hang"></div>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- ========== -->
+
+<!-- Features block -->
+
+<div class="features-block-container">
+	<div class="container features-block">
+
+	<div class="title-block">
+		<h2>Направления деятельности</h2>
+	</div>
+
+	<div class="features-block-preview-text">
+		ПАО "ПТКИ "Укркранэнерго" обладает мощным инженерно-техническим потенциалом и способен выполнить комплекс работ любой сложности, от разработки проектно-технологической и конструкторской документации и до воплощения ее в металле.
+	</div>
+
+		<div class="col-md-6 col-sm-6 col-xs-12 desc-features">
+			<div class="item" data-number="01">
+				<img src="img/icons/icon_1.svg" alt="qwe">
+				<span class="number-item">01</span>
+				<div class="title-item">
+					<h3><a href="#1">Тепловая энергетика</a></h3>
+					<div class="desc-item">Специализированное конструкторское бюро "Кран" разрабатывает по техническому заданию заказчика конструкторскую документацию на мостовые, козловые, башенные краны различной грузоподъемности и режима работы (в том числе, металлургические...</div>
+				</div>
+			</div>
+			<div class="item" data-number="02">
+				<img src="img/icons/icon_2.svg" alt="qwe">
+				<span class="number-item">02</span>
+				<div class="title-item">
+					<h3><a href="#2">Атомная энергетика</a></h3>
+					<div class="desc-item">Специализированное конструкторское бюро "Кран" разрабатывает по техническому заданию заказчика конструкторскую документацию на мостовые, козловые, башенные краны различной грузоподъемности и режима работы (в том числе, металлургические...</div>
+				</div>
+			</div>
+			<div class="item" data-number="03">
+				<img src="img/icons/icon_3.svg" alt="qwe">
+				<span class="number-item">03</span>
+				<div class="title-item">
+					<h3><a href="#3">Судопогрузочные машины</a></h3>
+					<div class="desc-item">Специализированное конструкторское бюро "Кран" разрабатывает по техническому заданию заказчика конструкторскую документацию на мостовые, козловые, башенные краны различной грузоподъемности и режима работы (в том числе, металлургические...</div>
+				</div>
+			</div>
+			<div class="item" data-number="04">
+				<img src="img/icons/icon_4.svg" alt="qwe">
+				<span class="number-item">04</span>
+				<div class="title-item">
+					<h3><a href="#4">Краны</a></h3>
+					<div class="desc-item">Специализированное конструкторское бюро "Кран" разрабатывает по техническому заданию заказчика конструкторскую документацию на мостовые, козловые, башенные краны различной грузоподъемности и режима работы (в том числе, металлургические...</div>
+				</div>
+			</div>
+			<div class="item" data-number="05">
+				<img src="img/icons/icon_5.svg" alt="qwe">
+				<span class="number-item">05</span>
+				<div class="title-item">
+					<h3><a href="#5">Высокотехнологичные инженерные услуги</a></h3>
+					<div class="desc-item">Специализированное конструкторское бюро "Кран" разрабатывает по техническому заданию заказчика конструкторскую документацию на мостовые, козловые, башенные краны различной грузоподъемности и режима работы (в том числе, металлургические...</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12 img-features">
+			<img src="img/features-block/1.png" alt="1" id='01'>
+			<img src="img/features-block/2.png" alt="2" id='02'>
+			<img src="img/features-block/3.png" alt="3" id='03'>
+			<img src="img/features-block/4.png" alt="4" id='04'>
+			<img src="img/features-block/2.png" alt="5" id='05'>
+			<div class="center-more">
+				<a href="#" class="orange-circle">+</a>
+				<p class="orange-circle-title">подробнее</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ============== -->
+
+<!-- Company News -->
+
+<div class="container company-news-container ">
+
+	<div class="title-block">
+		<h2>новости компании</h2>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-sm-12 news-item">
+			<div class="img-container">
+				<img src="img/features-block/1.png" alt="1">
+			</div>
+			<p class="date">25.11.2016</p>
+			<h4>Раскрепление котла производительностьюD=2650т/час при проведении РВР</h4>
+			<p class="desc">В начале 2016г. отделом ТЭС была разработана рабочая документация по  раскреплению котла производительностью D=2650т/час при проведении РВР.</p>
+			<a href="#" class="read-more">Подробнее</a>
+		</div>
+		<div class="col-md-6 news-item">
+			<div class="img-container">	
+				<img src="img/features-block/2.png" alt="2">
+			</div>
+			<p class="date">25.11.2016</p>
+			<h4>Раскрепление котла производительностьюD=2650т/час при проведении РВР</h4>
+			<p class="desc">В начале 2016г. отделом ТЭС была разработана рабочая документация по  раскреплению котла производительностью D=2650т/час при проведении РВР.</p>
+			<a href="#" class="read-more">Подробнее</a>
+		</div>
+		<div class="col-md-12 text-centrer read-more-news">
+			<div class="orange-circle">+</div>
+			<span class="orange-circle-title">Все новости компании</span>
+		</div>
+	</div>
+
+</div>
+
+<!-- ============ -->
+
+<!-- Map block -->
+
+<div class="container-fluid map-container">
+	<h2>География объектов</h2>
+	<div class="object-numbers">
+		<div class="left">
+			<p class="numbers"><span id="big-object">11</span><span id="small-object">537</span></p>
+			<p class="title">проэктов</p>
+		</div>
+		<div class="right">
+			<p class="numbers" id="country-number">14</p>
+			<p class="title">стран</p>
+		</div>
+		<div class="desc-objects">За 80 лет работы разработки института внедрены в Украине, странах СНГ,  в Аргентине, Германии, Египте, Индии, Китае, Мексике, Ираке, Алжире, Кубе, Болгарии, Вьетнаме</div>
+	</div>
+</div>
+
+<!-- ========= -->
+
+<!-- company services -->
+
+<div class="container company-services-container content-container">
+
+	<div class="content-border border-top"></div>
+	<div class="content-border border-bottom"></div>
+	<div class="content-border border-left"></div>
+	<div class="content-border border-right"></div>
+
+	<div class="col-md-9 about-company content-contact-items content">
+		<div class="row top-about-company">
+			<div class="col-md-3">
+				<h3>О компании</h3>
+			</div>
+			<div class="col-md-9">
+				<h4>Проектно-технологический и конструкторскийинститут «УКРКРАНЭНЕРГО»</h4>
+				<p>Высококвалифицированные специалисты ЧАО "ПТКИ "УКРКРАНЭНЕРГО", имеющие большой опыт выполнения проектно-технологической документации, готовы разработать для украинских и зарубежных Заказчиков проекты организации строительства и проекты производства строительно-монтажных работ самого разного уровня сложности, как для нового строительства, так и для ремонта и реконструкции объектов тепловой энергетики.С 1938 года Проектный отдел продолжает свою деятельность в составе вновь организованного треста "Южэнергострой", специализирующегося на проектировании новых котельных установок, реконструкции котлоагрегатов, выполнении работ по переводу котлоагрегатов с твердого топлива на мазут и т.д.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 strvices-title">Спектр услуг:</div>
+			<div class="col-md-9 strvices-list">
+				<div class="col-md-4 col-sm-4 about-company-more-item">
+					<img src="img/icons/serv-1.png" alt="1">
+					<span>Технологическое направление</span>
+				</div>
+				<div class="col-md-4 col-sm-4 about-company-more-item">
+					<img src="img/icons/serv-2.png" alt="2">
+					<span>Крановое направление</span>
+				</div>
+				<div class="col-md-4 col-sm-4 about-company-more-item">
+					<img src="img/icons/serv-3.png" alt="3">
+					<span>Высокотехнологичные инжениринговые услуги</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 about-company-more">
+		<div class="orange-circle-container">
+			<div type='submit' class='orange-circle'>+</div>
+			<p class="orange-circle-title">Отправить</p>
+		</div>
+	</div>
+</div>
+
+<!-- ================ -->
+
+<!-- company clients block -->
+
+<div class="company-clients-container">
+	<div class="container">
+		
+		<div class="row">
+			<div class="title-block">
+				<h2>наши клиенты</h2>
+			</div>
+			<div class="slogan">Наши возможности позволяют выполнять любые проектные решения в кратчайшие сроки и по приемлемым ценам.</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/1.png" alt="1"></a></div>
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/2.png" alt="2"></a></div>
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/3.png" alt="3"></a></div>
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/4.png" alt="4"></a></div>
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/5.png" alt="5"></a></div>
+			<div class="col-md-2 col-sm-2 col-xs-4 item-client"><a href="#"><img src="img/clients/6.png" alt="6"></a></div>
+		</div>
+
+	</div>
+</div>
+
+<!-- ================== -->
+
+
+<!-- /*CONTENT END*/-->
+
+
+<!-- /*FOOTER*/ -->
+<footer>
+	<div class="container footer-head">
+		<div class="col-md-4 col-sm-4 footer-head-logo">
+			<a href="#"><img src="img/logo-white.png" alt="logo"></a>
+		</div>
+		<div class="col-md-8 col-sm-8 footer-head-adress">
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Адресс:</strong><br>6105, г. Харьков<br>ул. Ключаковская, 27б</div>
+			</div>
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Email:</strong><br>ukemp@ukemp.org</div>
+			</div>
+			<div class="item-adress col-sm-4">
+				<div class="icon"></div>
+				<div class="text"><strong>Телефон/факс:</strong><br>+38 057-337-97-76</div>
+			</div>
+		</div>
+	</div>
+	<div class="container footer-content">
+		<div class="col-md-8 footer-content-menu">
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">О компании</a></h5>
+				<ul>
+					<li><a href="#">История</a></li>
+					<li><a href="#">Информация Эммитента</a></li>
+					<li><a href="#">Лицензии и свидетельство</a></li>
+					<li><a href="#">Система качества</a></li>
+					<li><a href="#">Клиенте</a></li>
+					<li><a href="#">Партнеры</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Дятельность</a></h5>
+				<ul>
+					<li><a href="#">Тепловая энергетика</a></li>
+					<li><a href="#">Атомная энергетика</a></li>
+					<li><a href="#">Грузоподъемная техника</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Технологические направления</a></h5>
+				<ul>
+					<li><a href="#">Тепловая энергетика</a></li>
+					<li><a href="#">Атомная энергетика</a></li>
+					<li><a href="#">Отзывы клиентов</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<h5><a href="#">Крановое направление</a></h5>
+				<ul>
+					<li><a href="#">Грузородъемная техника</a></li>
+					<li><a href="#">Погрузочная техника</a></li>
+					<li><a href="#">Реконструкция</a></li>
+					<li><a href="#">Диагностика</a></li>
+					<li><a href="#">Отзывы клиентов</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 footer-content-map">
+			<div id="footer-map"></div>
+		</div>
+	</div>
+	<div class="container footer-bottom">
+		<div class="col-md-3 col-sm-3 col-xs-6 rules">© 2017 ЧАО «ПТКИ «УКРАНЭНЕРГО»</div>
+		<div class="col-md-6 col-sm-6 col-xs-6 text-center links">
+			<a href="#">Новости</a>
+			<a href="#">Контакты</a>	
+		</div>
+		<div class="col-md-3 col-sm-3 col-xs-12 name-of">Дизайн и разработка - <a href="#"><img src="img/it-works-logo.png" alt="it-works-logo"></a></div>
+	</div>
+</footer>
+
+<div class="button-up-container">
+	<span>&uarr;<br>Вверх</span>
+</div>
+<!-- /*FOOTER END*/ -->	
+
+<!-- /* sctipts */ -->
+<script src="libs/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/mapAPI.js"></script>
+<script src="libs/aishek-jquery-animateNumber-52916cb/jquery.animateNumber.min.js"></script>
+<script src="js/common.js"></script>
+<!-- ======= -->
+
+</body>
+</html>

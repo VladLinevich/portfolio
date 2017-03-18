@@ -1,0 +1,87 @@
+//footer
+.footer
+	margin-top: 25px
+
+	.footer-content
+		background-color: #f4f2ec
+		margin-left: 0
+		margin-right: 0
+		color: $grey
+		margin-bottom: 20px
+		padding-bottom: 20px
+
+	.footer-top
+		line-height: 45px
+		border-radius: 5px 5px 0 0
+		border: 1px solid #635543
+		border-bottom-weight: 2px
+		@extend %gradient-brown
+		text-align: center
+		color: #fff
+		text-shadow: 0 1px 1px #000
+		font-size: $bfsz + 1
+		font-style: italic
+		margin-bottom: 15px
+		letter-spacing: .4px
+
+	h6
+		display: inline-block
+		text-transform: uppercase
+		color: $brown
+		font-family: $klavika
+		font-size: $bfsz + 3
+		vertical-align: middle
+		a
+			@include hover($brown, $lightBlack)
+			@extend %hovered
+
+	img
+		margin-left: 7px
+		margin-top: -5px
+
+	.brown-grad
+		@extend %gradient-brown
+		text-transform: uppercase
+		font-family: $klavika
+		text-shadow: 3px 0px 0px #64522a
+		letter-spacing: 1px
+		&:active, &:hover, &:focus, &:active:hover
+			box-shadow: none
+			background-color: transparent
+			outline: none
+			border: 1px solid $brown
+			@extend %gradient-brown
+
+		img
+			float: right
+			margin-top: 1px			
+
+.center-f
+	ul li
+		display: inline-block
+		float: left
+		min-width: 180px
+		font-size: 16px
+		margin-top: 4px
+		&:nth-child(3n+1)
+			clear: both
+		a
+			color: #757268
+
+.right-f 
+	p
+		margin-left: 8px
+	.adress
+		margin-top: 20px
+
+.copyright-f
+	text-align: center
+	font-size: $bfsz - 1
+	margin-bottom: 30px
+	color: #716c61
+	strong
+		color: #3a3731
+
+
+		
+

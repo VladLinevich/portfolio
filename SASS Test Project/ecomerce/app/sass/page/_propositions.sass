@@ -1,0 +1,203 @@
+.propositions-c
+	.nav-tabs
+		border-bottom: 1px solid $light-blue
+		li
+			a
+				font-size: $base-fsz	+ 2
+    font-weight: 900
+    font-style: italic
+    text-decoration: underline
+    @media screen and (max-width: 500px)
+    		font-size: $base-fsz	- 2
+    @media screen and (max-width: 340px)
+    		padding-right: 5px
+    		padding-left: 5px
+    i
+    	display: none
+    	@media screen and (max-width: 768px)
+    		display: inline-block
+    span
+					@media screen and (max-width: 768px)
+    		display: none
+  	&.active
+  		span
+					@media screen and (max-width: 768px)
+    		display: inline-block
+  		a, a:hover, a:focus, a:active
+  			font-size: $base-fsz	+ 3
+	    text-decoration: none
+	    color: $red-color
+	    border: 1px solid $light-blue
+    	border-bottom-color: transparent;	
+	    background-image: $gradient-color
+	    @media screen and (max-width: 500px)
+    		font-size: $base-fsz	- 1
+
+
+	.tab-content
+		border: 1px solid $light-blue
+		border-top-color: transparent
+		border-radius: 0 0 5px 5px
+
+	.owl-wrapper
+		padding-top: 25px 
+		.item
+			text-align: center
+		
+	.product-item
+		width: 160px
+		display: inline-block
+		text-align: left
+
+
+	
+		.product-picture
+			min-height: 125px
+			position: relative
+			&.action-true-present
+				&:before
+					background-image: url(../img/products/present.png)
+					content: ""
+					display: block
+					width: 68px
+					height: 40px
+					position: absolute
+					z-index: 1
+				.present-product
+					display: block
+			&.action-true-sale
+				&:before
+					background-image: url(../img/products/sale.png)
+					content: ""
+					display: block
+					width: 68px
+					height: 40px
+					position: absolute
+					z-index: 1
+			&.action-true-price
+				&:before
+					background-image: url(../img/products/super-price.png)
+					content: ""
+					display: block
+					width: 68px
+					height: 40px
+					position: absolute
+					z-index: 1
+					
+
+			>img
+				position: absolute
+    bottom: 0
+
+   .present-product
+   	width: 40px
+    position: absolute
+    background-color: #fff
+    border: 1px solid $red-color
+    border-radius: 5px
+    z-index: 2
+    left: calc(155px - 30px)
+    padding: 5px
+    display: none
+    &:before, &:after
+	    content: ''
+	    position: absolute
+	    left: -16px 
+	    top: 10px
+	    border: 8px solid transparent
+	    border-right: 8px solid $red-color
+	   &:after
+	   	@extendet &:before
+	   	border-right: 10px solid white
+    	left: -15px
+
+    img
+    	width: 100% 
+    	margin-bottom: 3px
+
+
+		p
+			margin-bottom: 5px
+
+		p.action
+			color: $red-color
+			line-height: 1.2
+
+		p.title a
+			text-decoration: underline
+			margin-bottom: 0
+
+		p.old-price
+			font-weight: 900
+   color: rgba(0,0,0,0.5)
+   position: relative
+   margin-bottom: 2px
+   &:before
+   	content: ""
+   	display: block
+   	width: 70px
+   	height: 1px
+   	position: absolute
+   	background-color: $red-color
+   	left: 0
+   	top: 50%
+
+  a.price
+  	display: inline-block
+   font-size: 15px
+   padding: 1px 5px
+   border: 1px solid #e4d9d9
+   transform: skew(-15deg)
+   border-radius: 5px 0
+   color: $black-color
+   margin-left: -7px
+   background-image: $gradient-color
+   strong
+   	font-weight: 900
+   	letter-spacing: -0.5px
+   img
+   	transform: skew(15deg)
+   	width: 20px
+   	vertical-align: middle
+   	margin-left: 3px
+
+  p.money
+  	color: $green-color
+  	font-size: $base-fsz - 3
+
+ .owl-controls .owl-page, .owl-controls .owl-buttons div
+ 	cursor: pointer
+  display: inline-block
+  position: absolute
+  top: calc(50% - 20px)
+  color: rgba(51, 51, 51, 0.41)
+  &:hover
+  	color: $black-color
+  i
+  	font-size: 45px
+
+ .owl-controls .owl-next
+ 	left: calc(100% - 30px)
+
+
+.all-propositions
+	text-align: right
+	padding: 10px 60px 0 0
+
+	@media screen and (max-width: 500px)
+		padding: 10px 10px 0 0
+
+	a
+		display: inline-block
+  font-size: $base-fsz
+  padding: 1px 5px
+  border: 1px solid #e4d9d9
+  transform: skew(-15deg)
+  border-radius: 5px 0
+  background-image: $gradient-color
+  font-weight: 700
+  span
+  	display: inline-block
+  	transform: skew(15deg)
+  	text-decoration: underline
+

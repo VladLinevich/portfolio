@@ -1,0 +1,133 @@
+@media (min-width: 1920px)
+
+	.main-contact-block .title-block h2
+		margin-bottom: 0
+
+	.contact-container
+
+		.col-md-4
+			padding-bottom: 50px
+
+		$destContactBlock: 70px
+
+		.contact-title-block
+			padding-top: $destContactBlock + 35
+			font-size: 18pt
+			width: 25%
+
+			&.management-title-block
+				padding-top: $destContactBlock - 10
+
+			>.row
+				padding-bottom: 50px
+
+			span:after
+				width: 50px
+				top: 120%
+
+		.content-contact-items
+			background-color: #fff
+			padding-top: $destContactBlock + 35
+			padding-left: $destContactBlock + 5
+			padding-right: $destContactBlock - 20
+			position: relative
+			width: 75%
+			&:after
+				border-width: 0 0 #{$destContactBlock} #{$destContactBlock}
+			&.management
+				padding-top: $destContactBlock - 10
+
+
+		.no-bg
+			padding-left: $destContactBlock - 16
+			padding-top: $destContactBlock - 20
+			padding-bottom: $destContactBlock - 20
+			padding-right: $destContactBlock 
+
+		.title-item
+			font-size: 18pt
+			padding-left: 15px
+			margin-bottom: 20px
+
+		.desc-item
+			font-size: 15pt
+			padding-left: 15px
+
+		.no-bg
+			padding-bottom: 0
+			&.col-md-8
+				width: 75%
+			&.col-md-push-4
+				left: 25%
+
+	.call-back-footer-form
+		margin-top: 30px
+		padding-top: 80px
+
+		.title-block
+			padding-bottom: 30px
+
+		label
+			font-size: 18pt
+			margin-bottom: 7px
+			padding-left: 20px
+			span
+				font-size: 16pt
+
+		input.form-control
+			height: 60px
+			font-size: 16pt
+			padding-left: 20px
+			margin-bottom: 30px
+
+		textarea.form-control
+			height: 200px
+
+		.submit-form-container
+			margin-top: 55px
+
+		.col-md-6 .form-group
+			padding-left: 30px
+	
+
+@include media(990)
+	.contact-container
+		.col-md-4, .col-md-12
+			min-height: initial
+			margin-bottom: 20px
+
+@include media(990)
+	.main-contact-block, .contact-container
+		padding: 0 15px 0 15px
+
+	.management-container
+		margin-right: -20px
+
+@include media(768)
+	.call-back-footer-form 
+		padding-bottom: 0
+		.submit-form-container
+			text-align: center
+			p
+				display: block
+				margin-left: 0
+				margin-bottom: 0
+
+	.management-container
+		margin-right: -30px
+		padding-left: 0
+
+@include media(520)
+	.contact-container .contact-row
+		margin: 0 -15px 0 0 !important
+
+	.contact-container 
+		.content-contact-items
+			padding-top: 20px
+			padding-left: 30px
+
+		.no-bg
+			padding: 25px 0 0 14px
+
+		.management-title-block
+			padding-top: 10px

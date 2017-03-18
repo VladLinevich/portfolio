@@ -1,0 +1,222 @@
+body
+	color: $fontColor
+	font-size: $bfsz
+	font-weight: normal
+	font-family: 'Roboto'
+	background-color: #f2f4f4
+
+
+.orange-circle
+	@extend %orange-circle
+	@extend %transition
+	@include hoverBg($accentColor, #ff7906)
+
+.orange-circle-title
+	text-transform: uppercase
+	color: #fff
+	margin-top: 15px
+	font-weight: 400
+	font-size: $bfsz + 2
+
+
+// ------------------------>  Breadcrumbs <------------------------------------------------/
+
+.breadcrumb	
+	margin: 20px 0
+
+	li
+		a
+			text-transform: uppercase
+			text-decoration: none
+			@extend %transition
+			@include hover($fontColor, $greyColor)
+
+.breadcrumb>li+li:before
+	content: '\e258'
+	font-family: 'BootstarpIcons'
+	font-size: $bfsz - 2
+	padding: 0 5px
+	margin-top: 0px
+	vertical-align: text-bottom
+	display: inline-block
+
+@media (min-width: 1920px)
+	.breadcrumb	
+		padding: 0
+		font-size: 15pt
+		margin: 50px 0
+		>li+li:before
+			font-size: 12pt
+
+@include media(768)
+	.breadcrumb	
+		margin: 20px 0
+
+
+// ------------------------>  Title of block <------------------------------------------------/
+
+.title-block
+	text-align: center
+	border-top: 1px solid $lightGreyColor
+	margin: 0
+	h2
+		text-align: center
+		font-weight: bold
+		text-transform: uppercase
+		display: inline-block
+		padding: 0 15px
+		margin: 0
+		background-color: #f2f4f4
+		position: relative
+		top: -18px
+
+@media (min-width: 1920px)
+	.title-block h2
+		font-size: 36pt
+		margin-bottom: 20px
+		top: -28px
+
+@include media(520)
+	.title-block h2
+		padding: 0 10px
+		font-size: 25px
+		top: -15px
+		
+		
+// ------------------------>  Content container   <------------------------------------------------/
+$distanceContentBorder: 30px
+
+.content-container
+	position: relative
+	margin-bottom: $distanceContentBorder * 2
+
+.content
+	background-color: #fff
+	padding: #{$distanceContentBorder*2 + 20} #{$distanceContentBorder*2} #{$distanceContentBorder*2 + 20} #{$distanceContentBorder + 10}
+	margin: 10px 0
+	position: relative
+	margin-left: $distanceContentBorder
+	&:after
+		content: ''
+		display: block
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 #{$distanceContentBorder*2} #{$distanceContentBorder*2}
+		border-color: transparent transparent #f2f4f4 transparent;
+		position: absolute
+		bottom: 0
+		right: 0
+
+.content-border
+	background-color: $lightGreyColor
+	position: absolute
+	z-index: 9
+
+
+.border
+	&-top
+		height: 1px
+		width: calc(100% - #{$distanceContentBorder})
+		top: $distanceContentBorder
+		left: 0
+	&-bottom
+		height: 1px
+		width: calc(100% - #{$distanceContentBorder})
+		bottom: -$distanceContentBorder
+		left: 0
+	&-left
+		width: 1px
+		height: 100%
+		top: $distanceContentBorder
+		left: 0
+	&-right
+		width: 1px
+		height: 100%
+		top: $distanceContentBorder
+		right: 0
+		margin-right: $distanceContentBorder
+
+
+@media (min-width: 1920px)
+
+	$distanceContentBorder: 45px
+
+	.content-container
+		margin-bottom: $distanceContentBorder * 2
+	.content
+		padding: #{$distanceContentBorder*2 + 20} #{$distanceContentBorder} #{$distanceContentBorder*2 + 20} #{$distanceContentBorder}
+		margin-left: $distanceContentBorder
+		&:after
+			border-width: 0 0 #{$distanceContentBorder*2} #{$distanceContentBorder*2};
+	.content-border
+		background-color: $lightGreyColor
+	.border
+		&-top
+			width: calc(100% - #{$distanceContentBorder})
+			top: $distanceContentBorder + 15
+		&-left
+			top: $distanceContentBorder + 15
+		&-right
+			top: $distanceContentBorder + 15
+			margin-right: $distanceContentBorder
+		&-bottom
+			width: calc(100% - #{$distanceContentBorder})
+			bottom: -($distanceContentBorder + 15)
+
+
+@include media(520)
+
+	$distanceContentBorder: 15px
+
+	.content-container
+		margin-bottom: $distanceContentBorder * 2
+	.content
+		padding: #{$distanceContentBorder*2 + 20} #{$distanceContentBorder} #{$distanceContentBorder*2 + 20} #{$distanceContentBorder}
+		margin-left: $distanceContentBorder
+		&:after
+			border-width: 0 0 #{$distanceContentBorder*2} #{$distanceContentBorder*2};
+	.content-border
+		background-color: $lightGreyColor
+	.border
+		&-top
+			width: calc(100% - #{$distanceContentBorder})
+			top: $distanceContentBorder
+		&-left
+			top: $distanceContentBorder
+		&-right
+			top: $distanceContentBorder
+			margin-right: $distanceContentBorder
+		&-bottom
+			width: calc(100% - #{$distanceContentBorder})
+			bottom: -$distanceContentBorder
+
+
+// ------------------------>  Pagination container   <------------------------------------------------/
+.pagination-container
+	padding: 20px 0 
+	background-color: #fff
+	text-align: center
+	.pagination
+		a
+			text-decoration: none
+			font-size: $bfsz
+			margin: 0 
+			width: 30px
+			line-height: 30px 
+			display: inline-block
+			@extend %transition
+			@include hover($fontColor, $greyColor)
+			&:first-of-type
+				margin-right: 10px
+				color: $greyColor
+			&:last-of-type
+				margin-left: 10px
+			&.active
+				background-color: $blueColor
+				color: #fff
+				border-radius: 50%
+
+@include media(520)
+	.pagination-container
+		padding: 0 			

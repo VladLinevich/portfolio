@@ -1,0 +1,522 @@
+//    -----------> top picture block <---------------------
+
+.top-content-container
+	background-color: #f4f4f4
+	padding: 0
+	position: relative
+	
+.top-content-img
+	width: 100%
+	overflow: hidden
+	max-height: 850px
+
+	img
+		width: 100%
+
+.top-content-cover
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: #28496b
+	opacity: .8
+
+.top-container-text
+	position: absolute
+	z-index: 2
+	color: #fff
+	top: 20%
+	left: 0
+	font-size: $bfsz + 10
+	font-weight: 300
+	width: 100%
+	text-align: center
+	
+
+
+	.text-block
+		display: inline-block
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+		padding-bottom: 25px
+		text-align: left
+	.big
+		font-size: $bfsz + 20
+		&.orange
+			color: $accentColor
+			font-size: $bfsz + 30
+
+	.orange-medium
+		color: $accentColor
+		font-size: $bfsz + 15
+
+	.orange-block
+		position: relative
+		display: inline-block
+		padding:  10px 15px 10px 10px
+		background-color: $accentColor
+		margin: 0 10px
+		clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 60%, 75% 100%, 30% 100%, 0 100%, 0% 30%)
+		margin-top: -38px
+		margin-bottom: -20px
+		span
+			font-size: $bfsz + 35
+			font-weight: 600
+
+	.read-more
+		display: inline-block
+		margin-top: 50px
+		font-size: $bfsz
+		text-decoration: none
+		text-transform: uppercase
+		font-weight: normal
+		@extend %transition
+		@include hover(#fff, $accentColor)
+		i
+			vertical-align: middle
+			top: -1px
+
+	.button-down
+		@extend %transition
+		@include hoverBg($accentColor, #ff7906)
+		width: 35px
+		line-height: 35px
+		font-size: $bfsz
+		border-radius: 50%
+		cursor: pointer
+		margin-top: 13%
+
+		.hvr-icon-hang:before
+
+			right: 7.5px
+			top: -20px
+			
+
+//    -----------> features block <---------------------
+
+.features-block-container
+	background-color: #fff
+
+	.title-block h2
+		background-color: #fff
+		margin-bottom: 15px
+
+	.features-block-preview-text
+		width: 60%
+		margin: 0 auto
+		font-size: 14px
+		text-align: center
+		color: #535455
+		font-style: italic
+		font-weight: 100
+		margin-bottom: 30px
+
+.features-block
+	padding-top: 70px
+	padding-bottom: 50px
+	background-color: #fff
+
+.desc-features .item
+	position: relative
+	cursor: pointer
+	margin-bottom: 20px
+	min-height: 70px
+	@extend %transition
+
+	img
+		width: 45px	
+		vertical-align: top
+		@extend %transition
+
+	.number-item
+		position: absolute
+		font-size: 60px
+		line-height: 50px
+		font-weight: 600
+		color: #f4f4f4
+		margin-left: 10px
+		@extend %transition
+
+	.title-item
+		display: inline-block
+		max-width: 85%
+		margin-left: 15px
+		position: absolute
+		margin-top: 5px
+
+			
+
+		h3
+			margin-top: 0
+			font-weight: 300
+			font-size: $bfsz + 6
+
+			a
+				text-decoration: none
+				color: $fontColor
+
+		.desc-item
+			color: #535455
+			max-height: 50px
+			width: 100%
+			overflow: hidden
+			text-overflow: ellipsis
+			display: none
+			font-size: $bfsz - 4
+			
+	&:hover
+		transform: scale(1.15) translateX(20px)
+	
+		.desc-item
+			display: block
+
+		&:after
+			width: 60%
+
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 0
+		height: 2px
+		left: 60px
+		top: 30px
+		background-color: $blueColor
+		@extend %transition
+
+
+.img-features
+	position: relative
+	min-height: 450px
+	width: 50%
+
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		position: absolute
+
+		&.active
+			z-index: 98
+
+	.center-more
+		position: absolute
+		z-index: 99
+		text-align: center
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+
+		.orange-circle
+			margin: 0 auto
+			position: relative
+			display: inline-block
+			text-decoration: none
+			&:hover
+				color: #fff
+			&:after
+				content: ''
+				display: block
+				width: 55px
+				height: 55px
+				position: absolute
+				background-color: #000
+				left: 0
+				top: 0
+				border-radius: 50%
+				z-index: -1
+				box-shadow: 0 0 180px 30px #000
+				
+			
+//    -----------> map block <------------------------------
+
+.map-container
+	height: 700px
+	overflow: hidden
+	background-image: url(../libs/map-main/amcharts.pixelMap.png)
+	background-position: center
+	background-size: cover
+	position: relative
+	margin: 20px 0 80px 0
+	
+
+	h2
+		color: #fff
+		text-transform: uppercase
+		font-weight: bold
+		margin-top: 50px
+		font-size: 35px
+		text-align: center
+		letter-spacing: 1.5px
+
+	.object-numbers
+		position: absolute
+		bottom: 0
+		margin-bottom: 20px
+		color: #fff	
+		text-align: center
+		width: 100%
+		>div
+			display: inline-block
+			margin: 0 20px
+			
+		
+			.numbers
+				font-size: $bfsz + 40
+				font-weight: bold
+				margin-bottom: 0
+				
+				#big-object
+					font-size: $bfsz + 40
+					font-weight: bold
+					margin-bottom: 0
+
+				span
+					font-size: $bfsz + 20
+					margin-left: 5px
+
+			.title
+				font-size: $bfsz
+				text-transform: uppercase
+				color: #56728f
+
+		.desc-objects
+			width: 400px
+			position: absolute
+			font-size: $bfsz - 2 
+			color: #56728f
+			font-weight: 300
+			font-style: italic
+			text-align: left
+			bottom: 0
+			margin-bottom: 10px
+			margin-left: 20px
+
+
+
+			
+
+
+//    -----------> company-news block <---------------------
+
+.company-news-container
+
+	$distanse: 50px
+
+
+	margin-top: $distanse + 20
+	padding-bottom: 40px
+
+	.title-block
+		margin-bottom: $distanse - 10
+		
+	.img-container
+		max-width: 250px
+		height: 200px
+		float: left
+		clear: both
+		margin-right: 20px
+		overflow: hidden
+		&:hover
+			img
+				transform: scale(1)
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transform: scale(1.8)
+		@extend %transition
+
+
+
+
+	.date
+		color: $blueColor
+		font-weight: bold
+
+	h4
+		font-size: $bfsz + 1 
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 5px
+
+	.desc
+		color: #535455
+		font-size: $bfsz - 2
+		max-height: 70px
+		overflow: hidden
+		text-overflow: ellipsis
+
+	.read-more
+		display: inline-block
+		text-transform: uppercase
+		text-decoration: none
+		@extend %transition
+		@include hoverBg(#fff, $blueColor)
+		@include hover($fontColor, #fff)
+		padding: 7px 20px
+		border-radius: 20px
+		box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.1)
+		font-size: $bfsz - 2
+		margin-top: 10px
+		&:hover
+			box-shadow: none
+
+	.read-more-news
+		text-align: center
+		margin-top: $distanse
+		> div
+			display: inline-block
+
+		.orange-circle-title
+				color: $fontColor
+				font-size: $bfsz	
+				margin-left: 15px
+
+
+//    -----------> company-services block <---------------------
+
+.company-services-container
+	margin-top: 40px
+	margin-bottom: 40px
+
+	&.content-container
+		.border-top
+			top: -20px
+			left: initial
+			right: 0
+			width: calc(100% - 40px)
+		.border-bottom
+			bottom: 20px
+			left: initial
+			right: 0
+			width: calc(100% - 40px)
+		.border-left
+			left: 40px
+			top: -20px
+		.border-right
+			right: -30px
+			top: -20px
+
+	.about-company
+		padding: 50px 70px 50px 50px
+		margin: 0
+		background-color: #fff
+	
+	h3
+		text-align: right
+		color: #8c9091
+		font-weight: bold
+		text-transform: uppercase
+		margin-top: 0
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			width: 35px
+			height: 2px
+			background-color: $accentColor
+			bottom: -15px
+			right: 0
+
+	h4
+		margin-top: 0
+		font-weight: 300	
+		color: #8c9091
+		font-size: $bfsz + 6
+
+	p
+		margin-top: 20px
+		font-size: $bfsz - 2
+		font-weight: 300
+		font-style: italic
+		color: #535455
+		max-height: 68px
+		overflow: hidden
+		text-overflow: ellipsis
+
+	.strvices-title
+		text-align: right
+		color: #8c9091
+		text-transform: uppercase
+
+.top-about-company
+	margin-bottom: 30px
+
+.about-company-more-item
+	padding-left: 0
+	color: $blueColor
+
+	img
+		width: 20%
+		display: inline-block
+		margin-right: 5px
+
+
+	span
+		font-size: $bfsz - 1
+		line-height: 1
+		width: 70%
+		display: inline-block
+		vertical-align: middle
+
+.about-company-more
+	text-align: center
+	min-height: 308px
+	position: relative
+	
+	
+	.orange-circle-container
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+
+	.orange-circle
+		margin: 0 auto
+	p
+		text-transform: uppercase
+		font-weight: normal
+		font-style: normal
+		font-size: $bfsz
+
+//    -----------> company-client block <---------------------
+
+.company-clients-container
+	margin-top: 70px
+	padding-top: 70px
+	padding-bottom: 60px
+	background-color: #fff
+
+	.title-block
+		margin-bottom: 20px 
+		h2
+			background-color: #fff
+
+	.slogan
+		font-size: $bfsz + 1
+		color: #535455
+		font-style: italic
+		margin: 20px auto 40px
+		max-width: 600px
+		text-align: center
+		
+
+	.item-client
+		border: 1px solid #eee
+		text-align: center
+		height: 160px
+		position: relative
+		
+		img
+			width: 60%
+			line-height: 160px
+			display: inline-block
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translateX(-50%) translateY(-50%)
+			
+
+
+@import 'main-page-responsive'
