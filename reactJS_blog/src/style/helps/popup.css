@@ -1,0 +1,28 @@
+.popup {
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(204, 82, 82);
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup_success{
+  background-color: rgb(5, 175, 56);
+  color: #fff;
+}
+
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+
+.popup__btn-wrap {
+  margin-top: 20px;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+.registration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 200px;
+  padding: 10px;
+  border: 1px solid #000000;
+  background-color: chocolate;
+}

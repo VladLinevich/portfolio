@@ -1,0 +1,13 @@
+.editPost {
+  position: absolute;
+  max-width: 400px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(202, 131, 131);
+  padding: 40px 20px
+}
+
+.editPost h4 {
+  margin: 0;
+}

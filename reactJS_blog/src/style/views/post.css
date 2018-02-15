@@ -1,0 +1,29 @@
+.post {
+  margin: 10px 5px;
+  background-color: rgb(240, 240, 240);
+  padding: 10px 15px;
+}
+
+.post-title {
+  font-size: 22px;
+  margin-top:  0;
+  margin-bottom: 10px;
+  color: #181818;
+}
+
+.post-text {
+  font-size: 14px;
+  font-style: italic;
+  color: #181818;
+}
+
+.post-time {
+  font-size: 12px;
+  text-align: right;
+  color: #696969;
+  font-weight: bold;
+}
+
+.post.edit {
+  background-color: rgb(255, 183, 134);
+}

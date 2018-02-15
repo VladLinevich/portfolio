@@ -1,0 +1,10 @@
+textarea {
+  width: 100%;
+  padding:  5px 10px;
+  margin: 5px 0;
+  height: 100px;
+  display: inline-block;
+  max-width: 88%;
+  font-size:  14px;
+  resize: none;
+}

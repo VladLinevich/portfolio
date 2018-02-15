@@ -1,0 +1,13 @@
+.post-add {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  width: 200px;
+  padding:  10px 20px;
+  border: 1px solid #b1b7db;
+  background-color: #fff;
+}
+
+.post-add header {
+  text-align: center;
+}
