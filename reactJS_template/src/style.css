@@ -1,0 +1,48 @@
+.template {
+  margin:  40px auto;
+  max-width: 400px;
+  background-color:#eae8e8;
+  text-align: center;
+}
+
+.editable {
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  transition: .3s ease;
+  border: 1px solid gray;
+}
+
+.editable:hover {
+  background-color:#d6d3d3;
+}
+
+
+.template .container{
+  width:  100%;
+  padding: 0;
+}
+
+.container .editable {
+  text-align: left;
+}
+
+.title {
+    text-align: center; 
+    text-transform: uppercase; 
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    margin: 40px 0;
+}
+
+
+
+.panel-default {
+  max-width: 300px;
+  position: absolute;
+  top: calc(50% - 15px);
+  transform: translateY(-50%);
+  left: 20px;
+}
